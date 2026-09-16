@@ -70,7 +70,7 @@ public class UserService {
         }
     }
 
-    public User update(Long id, User obj) {
+    public User update(Long id, UserDTO obj) {
         try {
             User entity = repository.getReferenceById(id);
             updateData(entity, obj);
@@ -80,7 +80,7 @@ public class UserService {
         }
     }
 
-    private void updateData(User entity, User obj) {
+    private void updateData(User entity, UserDTO obj) {
         entity.setName(obj.getName());
         entity.setEmail(obj.getEmail());
         entity.setPhone(obj.getPhone());
