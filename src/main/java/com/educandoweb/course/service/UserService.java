@@ -45,8 +45,16 @@ public class UserService {
         );
     }
 
-    public User insert(User obj) {
-        return repository.save(obj);
+    public User insert(UserDTO obj) {
+        User user = new User(
+                null,
+                obj.getName(),
+                obj.getEmail(),
+                obj.getPhone(),
+                null
+        );
+
+        return repository.save(user);
     }
 
     public void delete(Long id) {

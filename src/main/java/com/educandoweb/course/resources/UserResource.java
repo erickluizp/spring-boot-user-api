@@ -31,11 +31,19 @@ public class UserResource {
     }
 
     @PostMapping
-    public ResponseEntity<User> insert(@RequestBody User obj) {
-        obj = service.insert(obj);
+    public ResponseEntity<UserDTO> insert(@RequestBody UserDTO obj) {
+        User user = service.insert(obj);
+
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                 .buildAndExpand(obj.getId()).toUri();
-        return ResponseEntity.created(uri).body(obj);
+
+        UserDTO response = new UserDTO(
+                user.getId(),
+                user.getName(),
+                user.getEmail(),
+                user.getPhone()
+        );
+        return ResponseEntity.created(uri).body(response);
     }
 
     @DeleteMapping(value = "/{id}")
