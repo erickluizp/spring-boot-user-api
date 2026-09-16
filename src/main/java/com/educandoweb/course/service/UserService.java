@@ -1,5 +1,6 @@
 package com.educandoweb.course.service;
 
+import com.educandoweb.course.dto.UserDTO;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.repository.UserRepository;
 import com.educandoweb.course.service.exceptions.DatabaseException;
@@ -20,13 +21,28 @@ public class UserService {
     @Autowired
     private UserRepository repository;
 
-    public List<User> finAll() {
-        return repository.findAll();
+    public List<UserDTO> findAll() {
+        List<User> list = repository.findAll();
+
+        return list.stream()
+                .map(user -> new UserDTO(
+                        user.getId(),
+                        user.getName(),
+                        user.getEmail(),
+                        user.getPhone()
+                )).toList();
     }
 
-    public User findById(Long id) {
-        Optional<User> obj = repository.findById(id);
-        return obj.orElseThrow(() -> new ResourcesNotFoundException(id));
+    public UserDTO findById(Long id) {
+        User obj = repository.findById(id)
+                .orElseThrow(() -> new ResourcesNotFoundException(id));
+
+        return new UserDTO(
+                obj.getId(),
+                obj.getName(),
+                obj.getEmail(),
+                obj.getPhone()
+        );
     }
 
     public User insert(User obj) {
