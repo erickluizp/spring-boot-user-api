@@ -3,6 +3,7 @@ package com.educandoweb.course.resources;
 import com.educandoweb.course.dto.UserDTO;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +32,7 @@ public class UserResource {
     }
 
     @PostMapping
-    public ResponseEntity<UserDTO> insert(@RequestBody UserDTO obj) {
+    public ResponseEntity<UserDTO> insert(@Valid @RequestBody UserDTO obj) {
         User user = service.insert(obj);
 
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
@@ -53,7 +54,7 @@ public class UserResource {
     }
 
     @PutMapping(value = "/{id}")
-    public ResponseEntity<UserDTO> update(@PathVariable Long id, @RequestBody UserDTO obj) {
+    public ResponseEntity<UserDTO> update(@PathVariable Long id,@Valid @RequestBody UserDTO obj) {
         User user = service.update(id, obj);
 
         UserDTO response = new UserDTO(
