@@ -41,8 +41,8 @@ public class UserServiceTest {
                 "123456"
         );
         when(userRepository.findById(1L)).thenReturn(Optional.of(user));
-
         UserDTO result = userService.findById(1L);
+
         assertEquals(1L, result.getId());
         assertEquals("Maria Brown", result.getName());
         assertEquals("maria@gmail.com", result.getEmail());
