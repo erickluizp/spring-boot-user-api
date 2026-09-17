@@ -36,7 +36,7 @@ public class UserResource {
         User user = service.insert(obj);
 
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-                .buildAndExpand(obj.getId()).toUri();
+                .buildAndExpand(user.getId()).toUri();
 
         UserDTO response = new UserDTO(
                 user.getId(),
