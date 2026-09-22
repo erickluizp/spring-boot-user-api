@@ -1,6 +1,7 @@
 package com.educandoweb.course.service;
 
 import com.educandoweb.course.dto.UserDTO;
+import com.educandoweb.course.dto.UserInsertDTO;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.repository.UserRepository;
 import com.educandoweb.course.service.exceptions.DatabaseException;
@@ -12,6 +13,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
 import java.util.Optional;
@@ -26,6 +28,9 @@ public class UserServiceTest {
 
     @Mock
     private UserRepository userRepository;
+
+    @Mock
+    private PasswordEncoder passwordEncoder;
 
     @InjectMocks
     private UserService userService;
@@ -91,11 +96,11 @@ public class UserServiceTest {
 
     @Test
     public void insertShouldReturnUser() {
-        UserDTO dto = new UserDTO(
-                null,
+        UserInsertDTO dto = new UserInsertDTO(
                 "Carlos Silva",
                 "carlos@gmail.com",
-                "11999999999"
+                "11999999999",
+                "123456"
         );
 
         User user = new User(
@@ -107,6 +112,7 @@ public class UserServiceTest {
         );
 
         when(userRepository.save(any(User.class))).thenReturn(user);
+        when(passwordEncoder.encode("123456")).thenReturn("senha-criptografada");
         User result = userService.insert(dto);
         assertEquals(1L, result.getId());
         assertEquals("Carlos Silva", result.getName());

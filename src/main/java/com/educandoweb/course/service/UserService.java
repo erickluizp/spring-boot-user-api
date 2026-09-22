@@ -1,6 +1,7 @@
 package com.educandoweb.course.service;
 
 import com.educandoweb.course.dto.UserDTO;
+import com.educandoweb.course.dto.UserInsertDTO;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.repository.UserRepository;
 import com.educandoweb.course.service.exceptions.DatabaseException;
@@ -9,17 +10,20 @@ import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserService {
 
     @Autowired
     private UserRepository repository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public List<UserDTO> findAll() {
         List<User> list = repository.findAll();
@@ -45,13 +49,13 @@ public class UserService {
         );
     }
 
-    public User insert(UserDTO obj) {
+    public User insert(UserInsertDTO obj) {
         User user = new User(
                 null,
                 obj.getName(),
                 obj.getEmail(),
                 obj.getPhone(),
-                null
+                passwordEncoder.encode(obj.getPassword())
         );
 
         return repository.save(user);

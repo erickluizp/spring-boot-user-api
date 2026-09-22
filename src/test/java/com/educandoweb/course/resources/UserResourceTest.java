@@ -1,6 +1,7 @@
 package com.educandoweb.course.resources;
 
 import com.educandoweb.course.dto.UserDTO;
+import com.educandoweb.course.dto.UserInsertDTO;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.resources.exceptions.ResourceExceptionHandler;
 import com.educandoweb.course.service.UserService;
@@ -12,6 +13,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -28,6 +30,9 @@ public class UserResourceTest {
 
     @Mock
     private UserService service;
+
+    @Mock
+    private PasswordEncoder passwordEncoder;
 
     private MockMvc mockMvc;
 
@@ -101,14 +106,15 @@ public class UserResourceTest {
                 "4599925511",
                 null
         );
-        when(service.insert(any(UserDTO.class))).thenReturn(user);
+        when(service.insert(any(UserInsertDTO.class))).thenReturn(user);
         String json = """
-        {
-            "name": "Maria Brown",
-            "email": "maria@gmail.com",
-            "phone": "4599925511"
-        }
-        """;
+                {
+                    "name": "Maria Brown",
+                    "email": "maria@gmail.com",
+                    "phone": "4599925511",
+                    "password": "123456"
+                }
+                """;
 
         mockMvc.perform(post("/users").contentType(MediaType.APPLICATION_JSON).content(json))
                 .andExpect(status().isCreated())
@@ -141,12 +147,12 @@ public class UserResourceTest {
                 null
         );
         String json = """
-        {
-            "name": "Carlos Silva",
-            "email": "carlos@gmail.com",
-            "phone": "11999999999"
-        }
-        """;
+                {
+                    "name": "Carlos Silva",
+                    "email": "carlos@gmail.com",
+                    "phone": "11999999999"
+                }
+                """;
         when(service.update(eq(1L), any(UserDTO.class))).thenReturn(user);
         mockMvc.perform(put("/users/1").contentType(MediaType.APPLICATION_JSON).content(json))
                 .andExpect(status().isOk())
@@ -159,37 +165,39 @@ public class UserResourceTest {
     @Test
     public void updateShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
         String json = """
-        {
-            "name": "Carlos Silva",
-            "email": "carlos@gmail.com",
-            "phone": "11999999999"
-        }
-        """;
+                {
+                    "name": "Carlos Silva",
+                    "email": "carlos@gmail.com",
+                    "phone": "11999999999"
+                }
+                """;
         when(service.update(eq(999L), any(UserDTO.class))).thenThrow(new ResourcesNotFoundException(999L));
         mockMvc.perform(put("/users/999").contentType(MediaType.APPLICATION_JSON).content(json))
                 .andExpect(status().isNotFound());
     }
+
     @Test
     public void insertShouldReturnBadRequestWhenNameIsBlank() throws Exception {
         String json = """
-        {
-            "name": "",
-            "email": "maria@gmail.com",
-            "phone": "4599925511"
-        }
-        """;
+                {
+                    "name": "",
+                    "email": "maria@gmail.com",
+                    "phone": "4599925511"
+                }
+                """;
         mockMvc.perform(post("/users").contentType(MediaType.APPLICATION_JSON).content(json))
                 .andExpect(status().isBadRequest());
     }
+
     @Test
     public void insertShouldReturnBadRequestWhenEmailIsInvalid() throws Exception {
         String json = """
-        {
-            "name": "Maria Brown",
-                "email": "email-invalido",
-                "phone": "4599925511"
-        }
-        """;
+                {
+                    "name": "Maria Brown",
+                        "email": "email-invalido",
+                        "phone": "4599925511"
+                }
+                """;
         mockMvc.perform(post("/users").contentType(MediaType.APPLICATION_JSON).content(json))
                 .andExpect(status().isBadRequest());
     }

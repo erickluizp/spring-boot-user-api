@@ -1,6 +1,7 @@
 package com.educandoweb.course.resources;
 
 import com.educandoweb.course.dto.UserDTO;
+import com.educandoweb.course.dto.UserInsertDTO;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.service.UserService;
 import jakarta.validation.Valid;
@@ -32,7 +33,7 @@ public class UserResource {
     }
 
     @PostMapping
-    public ResponseEntity<UserDTO> insert(@Valid @RequestBody UserDTO obj) {
+    public ResponseEntity<UserDTO> insert(@Valid @RequestBody UserInsertDTO obj) {
         User user = service.insert(obj);
 
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
