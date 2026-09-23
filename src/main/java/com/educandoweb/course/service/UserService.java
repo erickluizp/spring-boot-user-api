@@ -55,7 +55,8 @@ public class UserService {
                 obj.getName(),
                 obj.getEmail(),
                 obj.getPhone(),
-                passwordEncoder.encode(obj.getPassword())
+                passwordEncoder.encode(obj.getPassword()),
+                "ROLE_USER"
         );
 
         return repository.save(user);

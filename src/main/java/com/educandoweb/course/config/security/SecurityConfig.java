@@ -27,6 +27,8 @@ public class SecurityConfig {
                 .formLogin(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST, "/users", "/login").permitAll()
+                        .requestMatchers(HttpMethod.DELETE, "/users/**").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/users/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)

@@ -104,7 +104,8 @@ public class UserResourceTest {
                 "Maria Brown",
                 "maria@gmail.com",
                 "4599925511",
-                null
+                null,
+                "ROLE_USER"
         );
         when(service.insert(any(UserInsertDTO.class))).thenReturn(user);
         String json = """
@@ -144,7 +145,8 @@ public class UserResourceTest {
                 "Carlos Silva",
                 "carlos@gmail.com",
                 "11999999999",
-                null
+                null,
+                "ROLE_USER"
         );
         String json = """
                 {

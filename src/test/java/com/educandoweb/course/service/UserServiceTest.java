@@ -43,7 +43,8 @@ public class UserServiceTest {
                 "Maria Brown",
                 "maria@gmail.com",
                 "4599925511",
-                "123456"
+                "123456",
+                "ROLE_USER"
         );
         when(userRepository.findById(1L)).thenReturn(Optional.of(user));
         UserDTO result = userService.findById(1L);
@@ -68,7 +69,8 @@ public class UserServiceTest {
                 "Maria Brown",
                 "maria@gmail.com",
                 "4599925511",
-                "123456"
+                "123456",
+                "ROLE_USER"
         );
 
         User user2 = new User(
@@ -76,7 +78,8 @@ public class UserServiceTest {
                 "Alex Green",
                 "alex@gmail.com",
                 "97777777777",
-                "123456"
+                "123456",
+                "ROLE_ADMIN"
         );
         when(userRepository.findAll()).thenReturn(List.of(user1, user2));
         List<UserDTO> result = userService.findAll();
@@ -108,7 +111,8 @@ public class UserServiceTest {
                 "Carlos Silva",
                 "carlos@gmail.com",
                 "11999999999",
-                null
+                null,
+                "ROLE_USER"
         );
 
         when(userRepository.save(any(User.class))).thenReturn(user);
@@ -134,7 +138,8 @@ public class UserServiceTest {
                 "Maria Brown",
                 "maria@gmail.com",
                 "4599925511",
-                "123456"
+                "123456",
+                "ROLE_USER"
         );
         when(userRepository.getReferenceById(user.getId())).thenReturn(user);
         when(userRepository.save(any(User.class))).thenReturn(user);
@@ -160,7 +165,8 @@ public class UserServiceTest {
                 "Maria Brown",
                 "maria@gmail.com",
                 "4599925511",
-                "123456"
+                "123456",
+                "ROLE_USER"
         );
         when(userRepository.getReferenceById(999L)).thenThrow(new EntityNotFoundException());
         assertThrows(ResourcesNotFoundException.class, () -> userService.update(999L, dto));
@@ -173,7 +179,8 @@ public class UserServiceTest {
                 "Maria Brown",
                 "maria@gmail.com",
                 "4599925511",
-                "123456"
+                "123456",
+                "ROLE_USER"
         );
         when(userRepository.existsById(user.getId())).thenReturn(true);
         userService.delete(user.getId());
@@ -187,7 +194,8 @@ public class UserServiceTest {
                 "Maria Brown",
                 "maria@gmail.com",
                 "4599925511",
-                "123456"
+                "123456",
+                "ROLE_USER"
         );
         when(userRepository.existsById(user.getId())).thenReturn(false);
         assertThrows(ResourcesNotFoundException.class, () -> userService.delete(user.getId()));
@@ -200,7 +208,8 @@ public class UserServiceTest {
                 "Maria Brown",
                 "maria@gmail.com",
                 "4599925511",
-                "123456"
+                "123456",
+                "ROLE_USER"
         );
         when(userRepository.existsById(user.getId())).thenReturn(true);
         doThrow(new DataIntegrityViolationException("")).when(userRepository).deleteById(user.getId());
