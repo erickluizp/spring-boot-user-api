@@ -1,6 +1,7 @@
 package com.educandoweb.course.service;
 
 import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import io.jsonwebtoken.Jwts;
 
@@ -10,7 +11,8 @@ import java.util.Date;
 @Service
 public class JwtService {
 
-    private final String secretKey = "minha-chave-secreta-com-mais-de-32-bytes";
+    @Value("${jwt.secret}")
+    private String secretKey;
 
     public String generateToken(String email) {
         Date now = new Date();

@@ -2,6 +2,7 @@ package com.educandoweb.course.resources;
 
 import com.educandoweb.course.dto.LoginRequestDTO;
 import com.educandoweb.course.service.JwtService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,7 +20,7 @@ public class AuthResource {
     private JwtService jwtService;
 
     @PostMapping
-    public ResponseEntity<String> login(@RequestBody LoginRequestDTO dto) {
+    public ResponseEntity<String> login(@Valid @RequestBody LoginRequestDTO dto) {
         UsernamePasswordAuthenticationToken usernamePassword =
                 new UsernamePasswordAuthenticationToken(
                 dto.getEmail(),
