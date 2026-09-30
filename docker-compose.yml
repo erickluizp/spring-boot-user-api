@@ -1,0 +1,8 @@
+services:
+  course-api:
+    build: .
+    container_name: course-api-container
+    ports:
+      - "8080:8080"
+    environment:
+      JWT_SECRET: ${JWT_SECRET}
