@@ -23,6 +23,7 @@ public class User implements Serializable {
     private String email;
     private String phone;
 
+    @JsonIgnore
     @Schema(hidden = true)
     private String password;
     private String role;

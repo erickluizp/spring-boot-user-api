@@ -20,8 +20,11 @@ import java.util.List;
 @RequestMapping(value = "/users")
 public class UserResource {
 
-    @Autowired
-    private UserService service;
+    private final UserService service;
+
+    public UserResource(UserService service) {
+        this.service = service;
+    }
 
     @Operation(
             summary = "Lista todos os usuários",

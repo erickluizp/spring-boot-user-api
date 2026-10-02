@@ -31,7 +31,7 @@ public class ProductResourceTest {
 
     @BeforeEach
     public void setup() {
-        ProductResource resource = new ProductResource();
+        ProductResource resource = new ProductResource(service);
 
         ReflectionTestUtils.setField(resource, "service", service);
 

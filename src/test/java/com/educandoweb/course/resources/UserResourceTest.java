@@ -34,7 +34,7 @@ public class UserResourceTest {
 
     @BeforeEach
     public void setup() {
-        UserResource resource = new UserResource();
+        UserResource resource = new UserResource(service);
 
         ReflectionTestUtils.setField(resource, "service", service);
 

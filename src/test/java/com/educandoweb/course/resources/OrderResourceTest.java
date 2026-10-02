@@ -33,7 +33,7 @@ public class OrderResourceTest {
 
     @BeforeEach
     public void setup() {
-        OrderResource resource = new OrderResource();
+        OrderResource resource = new OrderResource(service);
 
         ReflectionTestUtils.setField(resource, "service", service);
 

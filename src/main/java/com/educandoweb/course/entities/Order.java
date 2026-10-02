@@ -64,6 +64,9 @@ public class Order implements Serializable {
     }
 
     public OrderStatus getOrderStatus() {
+        if (orderStatus == null){
+            return null;
+        }
         return OrderStatus.valueOf(orderStatus);
     }
 
