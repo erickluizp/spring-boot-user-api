@@ -5,8 +5,10 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.http.MediaType;
 
@@ -20,6 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
+@TestPropertySource(properties = "JWT_SECRET=minha-chave-secreta-com-mais-de-32-bytes")
 public class UserSecurityTest {
 
     @Autowired
@@ -27,6 +30,9 @@ public class UserSecurityTest {
 
     @Autowired
     private JwtService jwtService;
+
+    @Value("${jwt.secret}")
+    private String secretKey;
 
     @Test
     public void shouldReturnUnauthorizedWhenAccessWithoutToken() throws Exception {
@@ -56,7 +62,7 @@ public class UserSecurityTest {
                 .subject("maria@gmail.com")
                 .expiration(new Date(System.currentTimeMillis() - 1000))
                 .signWith(Keys.hmacShaKeyFor(
-                        "minha-chave-secreta-com-mais-de-32-bytes".getBytes(StandardCharsets.UTF_8)
+                        secretKey.getBytes(StandardCharsets.UTF_8)
                 ))
                 .compact();
 
@@ -109,7 +115,7 @@ public class UserSecurityTest {
     }
 
     @Test
-    public void shouldReturnBadRequestWhenUserTriesToDelete() throws Exception {
+    public void shouldReturnBadRequestWhenAdminTriesToDeleteUserWithOrders() throws Exception {
         String token = jwtService.generateToken("alex@gmail.com");
 
         mockMvc.perform(delete("/users/2")
@@ -118,7 +124,7 @@ public class UserSecurityTest {
     }
 
     @Test
-    public void shouldReturnNoContentWhenUserTriesToDelete() throws Exception {
+    public void shouldReturnNoContentWhenAdminTriesToDeleteUser() throws Exception {
         String token = jwtService.generateToken("alex@gmail.com");
 
         mockMvc.perform(delete("/users/3")
