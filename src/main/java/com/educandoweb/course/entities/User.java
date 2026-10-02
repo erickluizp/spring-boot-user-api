@@ -1,6 +1,7 @@
 package com.educandoweb.course.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 import java.io.Serial;
@@ -21,6 +22,8 @@ public class User implements Serializable {
     private String name;
     private String email;
     private String phone;
+
+    @Schema(hidden = true)
     private String password;
     private String role;
 
