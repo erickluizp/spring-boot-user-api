@@ -71,7 +71,7 @@ public class UserService {
         }catch (EmptyResultDataAccessException e){
             throw new ResourcesNotFoundException(id);
         }catch (DataIntegrityViolationException e) {
-            throw new DatabaseException(e.getMessage());
+            throw new DatabaseException("Database integrity violation");
         }
     }
 
