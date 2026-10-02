@@ -79,7 +79,7 @@ public class UserServiceTest {
                 "alex@gmail.com",
                 "97777777777",
                 "123456",
-                "ROLE_ADMIN"
+                "ROLE_USER"
         );
         when(userRepository.findAll()).thenReturn(List.of(user1, user2));
         List<UserDTO> result = userService.findAll();
@@ -122,6 +122,8 @@ public class UserServiceTest {
         assertEquals("Carlos Silva", result.getName());
         assertEquals("carlos@gmail.com", result.getEmail());
         assertEquals("11999999999", result.getPhone());
+
+        verify(passwordEncoder).encode("123456");
     }
 
     @Test
@@ -183,7 +185,7 @@ public class UserServiceTest {
     @Test
     public void updateShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist() {
         UserDTO dto = new UserDTO(
-                2L,
+                null,
                 "Carlos Silva",
                 "carlos@gmail.com",
                 "11999999999"
@@ -202,7 +204,7 @@ public class UserServiceTest {
     }
 
     @Test
-    public void deleteShouldDoNothingWhenIdExists() {
+    public void deleteShouldDeleteUserWhenIdExists() {
         User user = new User(
                 1L,
                 "Maria Brown",
@@ -240,8 +242,18 @@ public class UserServiceTest {
                 "123456",
                 "ROLE_USER"
         );
+
         when(userRepository.existsById(user.getId())).thenReturn(true);
-        doThrow(new DataIntegrityViolationException("")).when(userRepository).deleteById(user.getId());
-        assertThrows(DatabaseException.class, () -> userService.delete(user.getId()));
+
+        doThrow(new DataIntegrityViolationException(""))
+                .when(userRepository)
+                .deleteById(user.getId());
+
+        DatabaseException exception = assertThrows(
+                DatabaseException.class,
+                () -> userService.delete(user.getId())
+        );
+
+        assertEquals("Database integrity violation", exception.getMessage());
     }
 }
