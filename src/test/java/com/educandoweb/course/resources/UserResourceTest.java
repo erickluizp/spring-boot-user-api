@@ -31,9 +31,6 @@ public class UserResourceTest {
     @Mock
     private UserService service;
 
-    @Mock
-    private PasswordEncoder passwordEncoder;
-
     private MockMvc mockMvc;
 
     @BeforeEach
@@ -201,6 +198,23 @@ public class UserResourceTest {
                 }
                 """;
         mockMvc.perform(post("/users").contentType(MediaType.APPLICATION_JSON).content(json))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    public void insertShouldReturnBadRequestWhenPasswordIsBlank() throws Exception {
+        String json = """
+            {
+                "name": "Maria Brown",
+                "email": "maria@gmail.com",
+                "phone": "4599925511",
+                "password": ""
+            }
+            """;
+
+        mockMvc.perform(post("/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
                 .andExpect(status().isBadRequest());
     }
 }
