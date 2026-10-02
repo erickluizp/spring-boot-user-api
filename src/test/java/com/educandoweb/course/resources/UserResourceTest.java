@@ -5,6 +5,7 @@ import com.educandoweb.course.dto.UserInsertDTO;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.resources.exceptions.ResourceExceptionHandler;
 import com.educandoweb.course.service.UserService;
+import com.educandoweb.course.service.exceptions.DatabaseException;
 import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.http.MediaType;
@@ -245,5 +246,14 @@ public class UserResourceTest {
                 .andExpect(jsonPath("$.name").value("Carlos Silva"))
                 .andExpect(jsonPath("$.email").value("carlos@gmail.com"))
                 .andExpect(jsonPath("$.phone").value("11999999999"));
+    }
+
+    @Test
+    public void deleteShouldReturnBadRequestWhenIntegrityViolation() throws Exception {
+        doThrow(new DatabaseException("Database integrity violation"))
+                .when(service).delete(1L);
+
+        mockMvc.perform(delete("/users/1"))
+                .andExpect(status().isBadRequest());
     }
 }
