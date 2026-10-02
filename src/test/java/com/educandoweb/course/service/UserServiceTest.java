@@ -152,6 +152,35 @@ public class UserServiceTest {
     }
 
     @Test
+    public void updateShouldKeepExistingPhoneWhenPhoneIsNotProvided() {
+
+        UserDTO dto = new UserDTO(
+                null,
+                "Carlos Silva",
+                "carlos@gmail.com",
+                null
+        );
+
+        User user = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                "123456",
+                "ROLE_USER"
+        );
+
+        when(userRepository.getReferenceById(user.getId())).thenReturn(user);
+        when(userRepository.save(any(User.class))).thenReturn(user);
+
+        User result = userService.update(user.getId(), dto);
+
+        assertEquals("Carlos Silva", result.getName());
+        assertEquals("carlos@gmail.com", result.getEmail());
+        assertEquals("4599925511", result.getPhone());
+    }
+
+    @Test
     public void updateShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist() {
         UserDTO dto = new UserDTO(
                 2L,
