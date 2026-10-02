@@ -58,6 +58,11 @@ public class CategoryResourceTest {
     @Test
     public void findByIdShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
        when(service.findById(999L)).thenThrow(new ResourcesNotFoundException(999L));
-       mockMvc.perform(get("/categories/999")).andExpect(status().isNotFound());
+        mockMvc.perform(get("/categories/999"))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.error").value("Resource not found"))
+                .andExpect(jsonPath("$.message").value("Resource not found. Id 999"))
+                .andExpect(jsonPath("$.path").value("/categories/999"));
     }
 }
