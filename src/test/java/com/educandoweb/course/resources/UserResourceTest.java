@@ -217,4 +217,33 @@ public class UserResourceTest {
                         .content(json))
                 .andExpect(status().isBadRequest());
     }
+    @Test
+    public void updateShouldReturnUserWhenPhoneIsNotProvided() throws Exception {
+        User user = new User(
+                1L,
+                "Carlos Silva",
+                "carlos@gmail.com",
+                "11999999999",
+                null,
+                "ROLE_USER"
+        );
+
+        String json = """
+            {
+                "name": "Carlos Silva",
+                "email": "carlos@gmail.com"
+            }
+            """;
+
+        when(service.update(eq(1L), any(UserDTO.class))).thenReturn(user);
+
+        mockMvc.perform(put("/users/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(1))
+                .andExpect(jsonPath("$.name").value("Carlos Silva"))
+                .andExpect(jsonPath("$.email").value("carlos@gmail.com"))
+                .andExpect(jsonPath("$.phone").value("11999999999"));
+    }
 }
