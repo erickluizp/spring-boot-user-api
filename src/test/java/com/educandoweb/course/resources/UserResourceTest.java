@@ -8,13 +8,11 @@ import com.educandoweb.course.service.UserService;
 import com.educandoweb.course.service.exceptions.DatabaseException;
 import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
-import org.springframework.http.MediaType;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.http.MediaType;
 import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -63,7 +61,12 @@ public class UserResourceTest {
     @Test
     public void findByIdShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
         when(service.findById(999L)).thenThrow(new ResourcesNotFoundException(999L));
-        mockMvc.perform(get("/users/999")).andExpect(status().isNotFound());
+        mockMvc.perform(get("/users/999"))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.error").value("Resource not found"))
+                .andExpect(jsonPath("$.message").value("Resource not found. Id 999"))
+                .andExpect(jsonPath("$.path").value("/users/999"));
     }
 
     @Test
@@ -91,8 +94,7 @@ public class UserResourceTest {
                 .andExpect(jsonPath("$[1].id").value(2))
                 .andExpect(jsonPath("$[1].name").value("Alex Green"))
                 .andExpect(jsonPath("$[1].email").value("alex@gmail.com"))
-                .andExpect(jsonPath("$[1].phone").value("974563221"))
-        ;
+                .andExpect(jsonPath("$[1].phone").value("974563221"));        ;
     }
 
     @Test
@@ -172,33 +174,50 @@ public class UserResourceTest {
                 }
                 """;
         when(service.update(eq(999L), any(UserDTO.class))).thenThrow(new ResourcesNotFoundException(999L));
-        mockMvc.perform(put("/users/999").contentType(MediaType.APPLICATION_JSON).content(json))
-                .andExpect(status().isNotFound());
+        mockMvc.perform(put("/users/999")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.error").value("Resource not found"))
+                .andExpect(jsonPath("$.message").value("Resource not found. Id 999"))
+                .andExpect(jsonPath("$.path").value("/users/999"));
     }
 
     @Test
     public void insertShouldReturnBadRequestWhenNameIsBlank() throws Exception {
         String json = """
-                {
-                    "name": "",
-                    "email": "maria@gmail.com",
-                    "phone": "4599925511"
-                }
-                """;
-        mockMvc.perform(post("/users").contentType(MediaType.APPLICATION_JSON).content(json))
-                .andExpect(status().isBadRequest());
+        {
+            "name": "",
+            "email": "maria@gmail.com",
+            "phone": "4599925511",
+            "password": "123456"
+        }
+        """;
+        mockMvc.perform(post("/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.status").value(400))
+                .andExpect(jsonPath("$.error").value("Validation error"))
+                .andExpect(jsonPath("$.message").value("name: must not be blank"))
+                .andExpect(jsonPath("$.path").value("/users"));
     }
 
     @Test
     public void insertShouldReturnBadRequestWhenEmailIsInvalid() throws Exception {
         String json = """
-                {
-                    "name": "Maria Brown",
-                        "email": "email-invalido",
-                        "phone": "4599925511"
-                }
-                """;
-        mockMvc.perform(post("/users").contentType(MediaType.APPLICATION_JSON).content(json))
+            {
+                "name": "Maria Brown",
+                "email": "email-invalido",
+                "phone": "4599925511",
+                "password": "123456"
+            }
+            """;
+
+        mockMvc.perform(post("/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
                 .andExpect(status().isBadRequest());
     }
 
@@ -218,6 +237,7 @@ public class UserResourceTest {
                         .content(json))
                 .andExpect(status().isBadRequest());
     }
+
     @Test
     public void updateShouldReturnUserWhenPhoneIsNotProvided() throws Exception {
         User user = new User(
@@ -254,6 +274,42 @@ public class UserResourceTest {
                 .when(service).delete(1L);
 
         mockMvc.perform(delete("/users/1"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.status").value(400))
+                .andExpect(jsonPath("$.error").value("Database error"))
+                .andExpect(jsonPath("$.message").value("Database integrity violation"))
+                .andExpect(jsonPath("$.path").value("/users/1"));
+    }
+
+    @Test
+    public void updateShouldReturnBadRequestWhenNameIsBlank() throws Exception {
+        String json = """
+            {
+                "name": "",
+                "email": "carlos@gmail.com",
+                "phone": "11999999999"
+            }
+            """;
+
+        mockMvc.perform(put("/users/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    public void updateShouldReturnBadRequestWhenEmailIsInvalid() throws Exception {
+        String json = """
+            {
+                "name": "Carlos Silva",
+                "email": "email-invalido",
+                "phone": "11999999999"
+            }
+            """;
+
+        mockMvc.perform(put("/users/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
                 .andExpect(status().isBadRequest());
     }
 }
