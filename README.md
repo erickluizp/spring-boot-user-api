@@ -1,186 +1,197 @@
-# 👤 Spring Boot User API
+# 🛒 Spring Boot API: Usuários, Pedidos e Produtos
 
-API REST para gerenciamento de usuários, desenvolvida com Java e Spring Boot. O projeto implementa as operações de CRUD seguindo uma arquitetura em camadas, com tratamento de exceções e testes automatizados.
+API REST desenvolvida com Java e Spring Boot para gerenciar usuários, pedidos, produtos e categorias. Conta com autenticação e autorização via JWT, documentação interativa com Swagger, testes automatizados e execução em containers Docker.
 
-![Java](https://img.shields.io/badge/Java-17-orange)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
+![Java](https://img.shields.io/badge/Java-17%2B-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-API%20REST-brightgreen)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-JWT-6DB33F)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-database-blue)
-![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen)
+![Docker](https://img.shields.io/badge/Docker-compose-2496ED)
 
 ## 📋 Sobre o projeto
 
-Projeto pessoal criado para praticar o desenvolvimento backend com o ecossistema Spring. A API permite cadastrar, listar, buscar, atualizar e excluir usuários, retornando respostas HTTP adequadas para cada situação.
+Projeto desenvolvido a partir do curso de Java e Spring Boot do professor Nelio Alves (web services com Spring Boot e JPA/Hibernate), que fornece o modelo de domínio e a base da API. Sobre essa base, acrescentei:
+
+- Autenticação e autorização com **Spring Security e JWT**, com perfis `USER` e `ADMIN`
+- Documentação dos endpoints com **Swagger/OpenAPI**
+- Containerização com **Docker** e **Docker Compose**
+- Perfis de configuração separados (padrão, `test` e `docker`) e variáveis de ambiente
+- Testes automatizados de serviços, controllers e segurança
 
 ## ✨ Funcionalidades
 
-- Cadastro de usuários
-- Listagem de todos os usuários
-- Busca de usuário por ID
-- Atualização de dados
-- Exclusão de usuário
-- Tratamento de exceções com respostas HTTP padronizadas (ex.: `404` para usuário não encontrado)
-- Testes unitários com JUnit e Mockito
-- Containerização da aplicação e do banco de dados com Docker
-- Autenticação e autorização com Spring Security (login e controle de acesso às rotas)
-- Documentação interativa dos endpoints com Swagger/OpenAPI
+- CRUD de usuários, com cadastro público e senha armazenada com hash (BCrypt)
+- Login que retorna um token JWT
+- Controle de acesso por perfil: algumas operações são exclusivas de administradores
+- Gerenciamento de pedidos, itens de pedido, pagamentos, produtos e categorias
+- Tratamento de exceções com respostas HTTP padronizadas
+- Documentação interativa com Swagger, com suporte a token Bearer
+- Execução completa com `docker compose`
 
 ## 🛠️ Tecnologias utilizadas
 
 - **Java**
 - **Spring Boot**
-- **Spring Data JPA**
-- **Spring Security** (autenticação e autorização)
-- **Swagger / OpenAPI** (documentação da API)
-- **Hibernate**
-- **PostgreSQL**
+- **Spring Data JPA** e **Hibernate**
+- **Spring Security** com **JWT**
+- **Swagger / OpenAPI**
+- **PostgreSQL** (execução em container) e **H2** (perfil de testes)
 - **JUnit** e **Mockito**
 - **Maven**
-- **Docker**
+- **Docker** e **Docker Compose**
 - **Git e GitHub**
-- **Postman** (testes manuais dos endpoints)
+- **Postman**
 
-> Ajuste a lista conforme o que o projeto realmente usa (por exemplo, H2 nos testes, Docker, DTOs e Bean Validation).
+## 🧩 Modelo de domínio
+
+Entidades principais: `User`, `Order`, `OrderItem`, `Payment`, `Product` e `Category`, além da enumeração `OrderStatus`.
 
 ## 🏗️ Arquitetura
 
 O projeto segue a arquitetura em camadas:
 
 ```
-src/main/java/.../
-├── controller/   # Recebe as requisições HTTP e devolve as respostas
-├── service/      # Regras de negócio
+src/main/java/com/educandoweb/course/
+├── config/       # Configurações: segurança (JWT), Swagger e dados de teste
+│   └── security/ # Filtro JWT, UserDetails e SecurityConfig
+├── dto/          # Objetos de transferência de dados
+├── entities/     # Entidades JPA
 ├── repository/   # Acesso ao banco de dados (Spring Data JPA)
-├── entity/       # Entidades JPA
-├── security/     # Configuração de autenticação e autorização
-└── exception/    # Exceções personalizadas e tratamento global
+├── resources/    # Controllers REST e tratamento de exceções
+├── service/      # Regras de negócio (incluindo o serviço de JWT)
+└── CourseApplication.java
+
+src/main/resources/
+├── application.properties          # Configuração padrão
+├── application-test.properties     # Perfil de testes
+└── application-docker.properties   # Perfil para execução em container
+
+src/test/java/    # Testes de resources, security e service
 ```
-
-> Confirme os nomes dos pacotes no seu repositório e ajuste se forem diferentes.
-
-## 📡 Endpoints
-
-| Método | Rota           | Descrição                  |
-|--------|----------------|----------------------------|
-| POST   | `/users`       | Cria um novo usuário       |
-| GET    | `/users`       | Lista todos os usuários    |
-| GET    | `/users/{id}`  | Busca um usuário por ID    |
-| PUT    | `/users/{id}`  | Atualiza um usuário        |
-| DELETE | `/users/{id}`  | Remove um usuário          |
-
-### Exemplo de requisição
-
-`POST /users`
-
-```json
-{
-  "name": "Maria Silva",
-  "email": "maria@email.com"
-}
-```
-
-### Exemplo de resposta
-
-```json
-{
-  "id": 1,
-  "name": "Maria Silva",
-  "email": "maria@email.com"
-}
-```
-
-> Substitua as rotas e os campos pelos reais da sua API.
 
 ## 🔐 Autenticação e autorização
 
-A API usa Spring Security para proteger as rotas. O fluxo é:
+A API usa Spring Security com tokens JWT:
 
-1. O usuário se autentica na rota de login (ex.: `POST /auth/login`) e recebe um token.
-2. Nas demais requisições, envia o token no cabeçalho `Authorization: Bearer <token>`.
-3. Cada rota exige um perfil de acesso (ex.: `USER` ou `ADMIN`). Quem não tem permissão recebe `401 Unauthorized` ou `403 Forbidden`.
+1. O usuário se cadastra em `POST /users` (rota pública).
+2. Faz login em `POST /login` e recebe um token JWT.
+3. Nas demais requisições, envia o token no cabeçalho:
 
-> Ajuste esta seção ao que você implementou: tipo de autenticação (JWT, Basic, sessão), rotas públicas, perfis existentes e quais ações cada perfil pode fazer.
+```
+Authorization: Bearer <token>
+```
+
+4. Um filtro (`JwtAuthenticationFilter`) valida o token em cada requisição e carrega o usuário e o perfil dele. Token inválido ou ausente retorna `401 Unauthorized`.
+
+### Regras de acesso
+
+| Rota                          | Acesso                          |
+|-------------------------------|---------------------------------|
+| `POST /users` e `POST /login` | Público                         |
+| `/swagger-ui/**`, `/v3/api-docs/**` | Público                   |
+| `PUT /users/**`               | Somente `ADMIN`                 |
+| `DELETE /users/**`            | Somente `ADMIN`                 |
+| Demais rotas                  | Qualquer usuário autenticado    |
+
+Um usuário autenticado sem permissão para a operação recebe `403 Forbidden`.
+
+### Exemplo de login
+
+`POST /login`
+
+```json
+{
+  "email": "alex@gmail.com",
+  "password": "123456"
+}
+```
+
+### Usuários de exemplo (perfil `test`)
+
+No perfil `test`, a aplicação carrega dados de exemplo para facilitar os testes manuais:
+
+| Usuário      | E-mail            | Senha    | Perfil       |
+|--------------|-------------------|----------|--------------|
+| Maria Brown  | maria@gmail.com   | 123456   | `ROLE_USER`  |
+| Alex Green   | alex@gmail.com    | 123456   | `ROLE_ADMIN` |
+| Bob Brown    | bob@gmail.com     | 123456   | `ROLE_USER`  |
+
+> Esses usuários existem apenas para desenvolvimento e testes. Não use essas credenciais em produção.
 
 ## 📖 Documentação (Swagger)
 
-Com a aplicação rodando, a documentação interativa dos endpoints fica disponível em:
+Com a aplicação rodando, a documentação interativa fica em:
 
 ```
 http://localhost:8080/swagger-ui/index.html
 ```
 
-Nela é possível ver todas as rotas, os modelos de dados e testar as requisições direto pelo navegador. Para rotas protegidas, use o botão **Authorize** e informe o token.
-
-> Confirme a URL: ela muda conforme a biblioteca (`springdoc-openapi` usa `/swagger-ui/index.html`).
+Nela é possível ver todas as rotas e modelos e testar as requisições pelo navegador. Para rotas protegidas, faça login em `POST /login`, copie o token, clique em **Authorize** e cole o valor.
 
 ## 🚀 Como executar
 
 ### Pré-requisitos
 
-- JDK 17 ou superior (ajuste conforme a versão do seu projeto)
-- Maven
-- PostgreSQL instalado e em execução
+- JDK 17 ou superior
+- Maven (ou o `mvnw` incluído no projeto)
+- Docker e Docker Compose (para a execução em container)
 - Git
 
-### Passo a passo
+### Clonar o repositório
 
 ```bash
-# Clone o repositório
 git clone https://github.com/erickluizp/spring-boot-user-api.git
-
-# Acesse a pasta do projeto
 cd spring-boot-user-api
 ```
 
-Crie um banco de dados no PostgreSQL (por exemplo, `userdb`) e configure o arquivo `src/main/resources/application.properties`:
+### Opção 1: com Docker (recomendado)
 
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/userdb
-spring.datasource.username=SEU_USUARIO
-spring.datasource.password=SUA_SENHA
-spring.jpa.hibernate.ddl-auto=update
-```
+Não é preciso ter Java, Maven ou PostgreSQL instalados.
 
-Depois, execute a aplicação:
+Crie o arquivo de variáveis de ambiente a partir do modelo e preencha com seus valores:
 
 ```bash
-mvn spring-boot:run
+cp .env.example .env
 ```
 
-A API ficará disponível em `http://localhost:8080`.
-
-### 🐳 Executando com Docker
-
-Com o Docker instalado, não é preciso ter Java, Maven ou PostgreSQL na máquina:
+Suba os containers:
 
 ```bash
 docker compose up --build
 ```
 
-Esse comando constrói a imagem da API e sobe os containers da aplicação e do banco de dados. Para parar:
+O container usa o perfil `docker` (`application-docker.properties`). Para parar:
 
 ```bash
 docker compose down
 ```
 
-> Se o seu projeto tem apenas um `Dockerfile` e não um `docker-compose.yml`, troque o comando por `docker build -t spring-boot-user-api .` seguido de `docker run -p 8080:8080 spring-boot-user-api`, e explique como conectar ao banco.
+### Opção 2: localmente, com o perfil de testes
+
+```bash
+./mvnw spring-boot:run -Dspring-boot.run.profiles=test
+```
+
+Esse perfil carrega os dados de exemplo descritos acima.
+
+A API ficará disponível em `http://localhost:8080`.
 
 ## 🧪 Testes
 
-Para rodar os testes automatizados:
-
 ```bash
-mvn test
+./mvnw test
 ```
 
 ## 📚 Aprendizados
 
-- Construção de uma API REST com Spring Boot
-- Persistência de dados com Spring Data JPA e Hibernate
-- Separação de responsabilidades em camadas (Controller, Service e Repository)
-- Tratamento de exceções e uso correto de códigos de status HTTP
-- Testes unitários com JUnit e Mockito
-- Segurança de APIs com autenticação e autorização
-- Documentação de APIs com OpenAPI e containerização com Docker
+- Construção de uma API REST com Spring Boot, JPA e Hibernate
+- Autenticação stateless com JWT e controle de acesso por perfil com Spring Security
+- Criptografia de senhas com BCrypt
+- Documentação de APIs com OpenAPI/Swagger, incluindo autenticação Bearer
+- Separação de responsabilidades em camadas e uso de DTOs
+- Perfis de configuração e variáveis de ambiente
+- Containerização com Docker e Docker Compose
+- Testes automatizados com JUnit e Mockito
 
 ## 🔮 Próximos passos
 
@@ -188,6 +199,8 @@ mvn test
 - [x] Autenticação e autorização com Spring Security
 - [x] Containerização com Docker
 - [ ] Pipeline de CI com GitHub Actions
+- [ ] Paginação e filtros nas listagens
+- [ ] Deploy em nuvem (AWS)
 
 ## 👤 Autor
 
