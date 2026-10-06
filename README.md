@@ -2,8 +2,8 @@
 
 API REST desenvolvida com Java e Spring Boot para gerenciar usuários, pedidos, produtos e categorias. Conta com autenticação e autorização via JWT, documentação interativa com Swagger, testes automatizados e execução em containers Docker.
 
-![Java](https://img.shields.io/badge/Java-17%2B-orange)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-API%20REST-brightgreen)
+![Java](https://img.shields.io/badge/Java-25-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0-brightgreen)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-JWT-6DB33F)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-database-blue)
 ![Docker](https://img.shields.io/badge/Docker-compose-2496ED)
@@ -30,12 +30,13 @@ Projeto desenvolvido a partir do curso de Java e Spring Boot do professor Nelio 
 
 ## 🛠️ Tecnologias utilizadas
 
-- **Java**
-- **Spring Boot**
+- **Java 25**
+- **Spring Boot 4**
+- **Bean Validation** (validação dos dados de entrada)
 - **Spring Data JPA** e **Hibernate**
 - **Spring Security** com **JWT**
 - **Swagger / OpenAPI**
-- **PostgreSQL** (execução em container) e **H2** (perfil de testes)
+- **PostgreSQL 18** (execução em container) e **H2** (perfil de testes, em memória)
 - **JUnit** e **Mockito**
 - **Maven**
 - **Docker** e **Docker Compose**
@@ -106,6 +107,8 @@ Um usuário autenticado sem permissão para a operação recebe `403 Forbidden`.
 }
 ```
 
+A resposta (`200 OK`) é o próprio token JWT, em texto, com validade de 1 hora. Credenciais inválidas retornam `401`.
+
 ### Usuários de exemplo (perfil `test`)
 
 No perfil `test`, a aplicação carrega dados de exemplo para facilitar os testes manuais:
@@ -117,6 +120,39 @@ No perfil `test`, a aplicação carrega dados de exemplo para facilitar os teste
 | Bob Brown    | bob@gmail.com     | 123456   | `ROLE_USER`  |
 
 > Esses usuários existem apenas para desenvolvimento e testes. Não use essas credenciais em produção.
+
+## 📡 Endpoints
+
+| Método | Rota               | Descrição                                   | Acesso        |
+|--------|--------------------|---------------------------------------------|---------------|
+| POST   | `/login`           | Autentica e retorna o token JWT             | Público       |
+| POST   | `/users`           | Cadastra um usuário (retorna `201`)         | Público       |
+| GET    | `/users`           | Lista os usuários                           | Autenticado   |
+| GET    | `/users/{id}`      | Busca um usuário por ID                     | Autenticado   |
+| PUT    | `/users/{id}`      | Atualiza um usuário                         | `ADMIN`       |
+| DELETE | `/users/{id}`      | Exclui um usuário (retorna `204`)           | `ADMIN`       |
+| GET    | `/orders`          | Lista os pedidos                            | Autenticado   |
+| GET    | `/orders/{id}`     | Busca um pedido por ID                      | Autenticado   |
+| GET    | `/products`        | Lista os produtos                           | Autenticado   |
+| GET    | `/products/{id}`   | Busca um produto por ID                     | Autenticado   |
+| GET    | `/categories`      | Lista as categorias                         | Autenticado   |
+| GET    | `/categories/{id}` | Busca uma categoria por ID                  | Autenticado   |
+
+### Padrão de erros
+
+As exceções são tratadas globalmente e retornam um JSON padronizado:
+
+```json
+{
+  "timestamp": "2026-10-06T14:30:00Z",
+  "status": 404,
+  "error": "Resource not found",
+  "message": "Resource not found. Id 99",
+  "path": "/users/99"
+}
+```
+
+Erros de validação e de banco de dados retornam `400`, e recursos inexistentes retornam `404`.
 
 ## 📖 Documentação (Swagger)
 
@@ -132,7 +168,7 @@ Nela é possível ver todas as rotas e modelos e testar as requisições pelo na
 
 ### Pré-requisitos
 
-- JDK 17 ou superior
+- JDK 25
 - Maven (ou o `mvnw` incluído no projeto)
 - Docker e Docker Compose (para a execução em container)
 - Git
@@ -146,12 +182,18 @@ cd spring-boot-user-api
 
 ### Opção 1: com Docker (recomendado)
 
-Não é preciso ter Java, Maven ou PostgreSQL instalados.
+O banco PostgreSQL sobe em container, então não precisa instalá-lo. O `Dockerfile` copia o `.jar` da pasta `target`, por isso o projeto precisa ser compilado antes.
 
-Crie o arquivo de variáveis de ambiente a partir do modelo e preencha com seus valores:
+Crie o arquivo de variáveis de ambiente a partir do modelo e defina a chave secreta do JWT (`JWT_SECRET`, com pelo menos 32 caracteres):
 
 ```bash
 cp .env.example .env
+```
+
+Gere o `.jar`:
+
+```bash
+./mvnw clean package -DskipTests
 ```
 
 Suba os containers:
@@ -159,6 +201,8 @@ Suba os containers:
 ```bash
 docker compose up --build
 ```
+
+> As credenciais do PostgreSQL no `docker-compose.yml` são apenas para desenvolvimento. Em produção, use variáveis de ambiente ou um gerenciador de segredos.
 
 O container usa o perfil `docker` (`application-docker.properties`). Para parar:
 
@@ -168,15 +212,31 @@ docker compose down
 
 ### Opção 2: localmente, com o perfil de testes
 
+Defina a chave do JWT e execute (o perfil `test` já é o padrão e usa o banco H2 em memória):
+
 ```bash
-./mvnw spring-boot:run -Dspring-boot.run.profiles=test
+# Linux / macOS
+export JWT_SECRET="uma-chave-secreta-com-pelo-menos-32-caracteres"
+
+# Windows (PowerShell)
+$env:JWT_SECRET="uma-chave-secreta-com-pelo-menos-32-caracteres"
+
+./mvnw spring-boot:run
 ```
 
-Esse perfil carrega os dados de exemplo descritos acima.
+Esse perfil carrega os dados de exemplo descritos acima. O console do H2 fica em `http://localhost:8080/h2-console`.
 
 A API ficará disponível em `http://localhost:8080`.
 
 ## 🧪 Testes
+
+O projeto tem testes automatizados com **JUnit** e **Mockito**, incluindo testes de integração da camada web com **MockMvc**, organizados em:
+
+- `service`: testes das regras de negócio
+- `resources`: testes dos endpoints REST
+- `security`: testes de autenticação e autorização
+
+Para executar:
 
 ```bash
 ./mvnw test
