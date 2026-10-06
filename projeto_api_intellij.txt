@@ -1,0 +1,3625 @@
+﻿--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\.idea\compiler.xml ---
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="course" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="course" options="-parameters" />
+    </option>
+  </component>
+</project>
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\.idea\encodings.xml ---
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+  </component>
+</project>
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\.idea\jarRepositories.xml ---
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+  </component>
+</project>
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\.idea\misc.xml ---
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-25" project-jdk-type="JavaSDK" />
+</project>
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\.idea\vcs.xml ---
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+</project>
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\.idea\workspace.xml ---
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71dc593d-720c-4f4d-8365-7e8c7c529903" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Exception" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;erickluizp&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/erickluizp/worksho-springboot4-jpa.git&quot;,
+    &quot;accountId&quot;: &quot;22565d3c-c4b3-4b11-9c78-07e90c294f23&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3DxCTWWIaPXGPKlyo01txECsEnI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CourseApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in course (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in course.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryResourceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryResourceTest.findAllShouldReturnCategoryList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryResourceTest.findByIdShouldReturnCategoryWhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryResourceTest.findByIdShouldReturnNotFoundWhenIdDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryServiceTest.category.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryServiceTest.findAllShouldReturnUserDTOList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryServiceTest.findByIdShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourseApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderResourceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderResourceTest.findByIdShouldReturnOrderWhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceTest.findAllShouldReturnOrderList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceTest.findByIdShouldReturnOrderWhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceTest.findByIdShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductResourceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductResourceTest.findAllShouldReturnProductList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceTest.findAllShouldReturnProductList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceTest.findByIdShouldReturnProductWhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceTest.findByIdShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.deleteShouldReturnBadRequestWhenIntegrityViolation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.deleteShouldReturnNoContent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.deleteShouldReturnNotFoundWhenIdDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.findAllShouldReturnUserList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.findByIdShouldReturnNotFoundWhenIdDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.findByIdShouldReturnUserWhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.insertShouldReturnBadRequestWhenEmailIsInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.insertShouldReturnBadRequestWhenNameIsBlank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.insertShouldReturnBadRequestWhenPasswordIsBlank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.insertShouldReturnCreated.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.updateNotUserWhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.updateShouldReturnBadRequestWhenEmailIsInvalid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.updateShouldReturnBadRequestWhenNameIsBlank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.updateShouldReturnUserWhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.updateShouldReturnUserWhenPhoneIsNotProvided.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserResourceTest.uupdateShouldReturnNotFoundWhenIdDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserSecurityTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserSecurityTest.shouldReturnForbiddenWhenUserTriesToUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserSecurityTest.shouldReturnUnauthorizedWhenAccessWithoutToken.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.deleteShouldThrowDatabaseExceptionWhenIntegrityViolation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.deleteShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.findByIdShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserServiceTest.insertShouldReturnUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.updateShouldKeepExistingPhoneWhenPhoneIsNotProvided.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.updateShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in course.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.security in course.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CourseApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/elxfp/IdeaProjects/course-wsbjpa&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.educandoweb.course.resources" />
+      <recent name="com.educandoweb.course.repository" />
+      <recent name="com.educandoweb.course.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.java in course">
+    <configuration name="CategoryResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.educandoweb.course.resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.educandoweb.course.resources" />
+      <option name="MAIN_CLASS_NAME" value="com.educandoweb.course.resources.CategoryResourceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.educandoweb.course.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.educandoweb.course" />
+      <option name="MAIN_CLASS_NAME" value="com.educandoweb.course.CourseApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.educandoweb.course.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.educandoweb.course.service" />
+      <option name="MAIN_CLASS_NAME" value="com.educandoweb.course.service.OrderServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in course" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="course" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="security in course" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="course" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/educandoweb/course/security" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.CategoryResourceTest" />
+      <item itemvalue="JUnit.security in course" />
+      <item itemvalue="JUnit.CourseApplicationTests" />
+      <item itemvalue="JUnit.OrderServiceTest" />
+      <item itemvalue="JUnit.java in course" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.java in course" />
+        <item itemvalue="JUnit.CategoryResourceTest" />
+        <item itemvalue="JUnit.security in course" />
+        <item itemvalue="JUnit.CourseApplicationTests" />
+        <item itemvalue="JUnit.OrderServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71dc593d-720c-4f4d-8365-7e8c7c529903" name="Changes" comment="" />
+      <created>1779214342192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779214342192</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+</project>
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\config\security\JwtAuthenticationFilter.java ---
+package com.educandoweb.course.config.security;
+
+import com.educandoweb.course.service.JwtService;
+import io.jsonwebtoken.JwtException;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Component;
+import org.springframework.web.filter.OncePerRequestFilter;
+
+import java.io.IOException;
+
+@Component
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
+
+    @Autowired
+    private JwtService jwtService;
+
+    @Autowired
+    private UserDetailsService userDetailsService;
+
+    @Override
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+            throws ServletException, IOException {
+
+        String authHeader = request.getHeader("Authorization");
+        String token = null;
+
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+            token = authHeader.substring(7);
+        }
+
+        if (token != null) {
+            try {
+                String email = jwtService.getSubject(token);
+
+                UserDetails userDetails = userDetailsService.loadUserByUsername(email);
+
+                UsernamePasswordAuthenticationToken authenticationToken =
+                        new UsernamePasswordAuthenticationToken(
+                                userDetails,
+                                null,
+                                userDetails.getAuthorities()
+                        );
+
+                SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+
+            } catch (JwtException | UsernameNotFoundException e) {
+                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                return;
+            }
+        }
+
+        filterChain.doFilter(request, response);
+    }
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) {
+        String path = request.getServletPath();
+
+        return path.startsWith("/swagger-ui")
+                || path.startsWith("/v3/api-docs");
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\config\security\SecurityConfig.java ---
+package com.educandoweb.course.config.security;
+
+import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+
+@Configuration
+public class SecurityConfig {
+
+    private final JwtAuthenticationFilter jwtAuthenticationFilter;
+
+    public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter) {
+        this.jwtAuthenticationFilter = jwtAuthenticationFilter;
+    }
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        return http
+                .csrf(AbstractHttpConfigurer::disable)
+                .formLogin(AbstractHttpConfigurer::disable)
+                .exceptionHandling(exception -> exception
+                        .authenticationEntryPoint((request, response, authException) ->
+                                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED)
+                        )
+                )
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers(HttpMethod.POST, "/users", "/login").permitAll()
+                        .requestMatchers(
+                                "/swagger-ui/**",
+                                "/swagger-ui.html",
+                                "/v3/api-docs/**"
+                        ).permitAll()
+                        .requestMatchers(HttpMethod.DELETE, "/users/**").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/users/**").hasRole("ADMIN")
+                        .anyRequest().authenticated()
+                )
+                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+                .build();
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
+        return configuration.getAuthenticationManager();
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\config\security\UserDetailsImpl.java ---
+package com.educandoweb.course.config.security;
+
+import com.educandoweb.course.entities.User;
+import org.jspecify.annotations.Nullable;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.Collection;
+import java.util.List;
+
+public class UserDetailsImpl implements UserDetails {
+
+    private final User user;
+
+    public UserDetailsImpl(User user) {
+        this.user = user;
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of(new SimpleGrantedAuthority(user.getRole()));
+    }
+
+    @Override
+    public @Nullable String getPassword() {
+        return user.getPassword();
+    }
+
+    @Override
+    public String getUsername() {
+        return user.getEmail();
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\config\security\UserDetailsServiceImpl.java ---
+package com.educandoweb.course.config.security;
+
+import com.educandoweb.course.repository.UserRepository;
+import com.educandoweb.course.entities.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserDetailsServiceImpl implements UserDetailsService {
+
+    private final UserRepository repository;
+
+    public UserDetailsServiceImpl(UserRepository repository) {
+        this.repository = repository;
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        User user = repository.findByEmail(username)
+                .orElseThrow(() -> new UsernameNotFoundException("User not Found"));
+        return new UserDetailsImpl(user);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\config\OpenAPIConfig.java ---
+package com.educandoweb.course.config;
+
+import io.swagger.v3.oas.models.Components;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.security.SecurityRequirement;
+import io.swagger.v3.oas.models.security.SecurityScheme;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class OpenAPIConfig {
+
+    @Bean
+    public OpenAPI customOpenAPI() {
+        return new OpenAPI()
+                .components(new Components()
+                        .addSecuritySchemes("bearer-key",
+                                new SecurityScheme()
+                                        .type(SecurityScheme.Type.HTTP)
+                                        .scheme("bearer")
+                                        .bearerFormat("JWT")
+                        )
+                ).addSecurityItem(
+                        new SecurityRequirement().addList("bearer-key")
+                );
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\config\TestConfig.java ---
+package com.educandoweb.course.config;
+
+import com.educandoweb.course.entities.*;
+import com.educandoweb.course.entities.enums.OrderStatus;
+import com.educandoweb.course.repository.*;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import java.time.Instant;
+import java.util.Arrays;
+
+@Configuration
+@Profile("test")
+public class TestConfig implements CommandLineRunner {
+
+    private final UserRepository userRepository;
+    private final OrderRepository orderRepository;
+    private final CategoryRepository categoryRepository;
+    private final ProductRepository productRepository;
+    private final OrderItemRepository orderItemRepository;
+    private final PasswordEncoder passwordEncoder;
+
+    public TestConfig(
+            UserRepository userRepository,
+            OrderRepository orderRepository,
+            CategoryRepository categoryRepository,
+            ProductRepository productRepository,
+            OrderItemRepository orderItemRepository,
+            PasswordEncoder passwordEncoder
+    ) {
+        this.userRepository = userRepository;
+        this.orderRepository = orderRepository;
+        this.categoryRepository = categoryRepository;
+        this.productRepository = productRepository;
+        this.orderItemRepository = orderItemRepository;
+        this.passwordEncoder = passwordEncoder;
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+
+        Category cat1 = new Category(null, "Electronics");
+        Category cat2 = new Category(null, "Books");
+        Category cat3 = new Category(null, "Computers");
+
+        Product p1 = new Product(null, "The Lord of the Rings", "Lorem ipsum dolor sit amet, consectetur.", 90.5, "");
+        Product p2 = new Product(null, "Smart TV", "Nulla eu imperdiet purus. Maecenas ante.", 2190.0, "");
+        Product p3 = new Product(null, "MacBook Pro", "Nam eleifend maximus tortor, at mollis.", 1250.0, "");
+        Product p4 = new Product(null, "PC Gamer", "Donec aliquet odio ac rhoncus cursus.", 1200.0, "");
+        Product p5 = new Product(null, "Rails for Dummies", "Cras fringilla convallis sem vel faucibus.", 100.99, "");
+
+        categoryRepository.saveAll(Arrays.asList(cat1, cat2, cat3));
+        productRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5));
+
+        p1.getCategories().add(cat2);
+        p2.getCategories().add(cat1);
+        p2.getCategories().add(cat3);
+        p3.getCategories().add(cat3);
+        p4.getCategories().add(cat3);
+        p5.getCategories().add(cat2);
+
+        productRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5));
+
+        User u1 = new User(
+                null,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                passwordEncoder.encode("123456"),
+                "ROLE_USER"
+        );
+
+        User u2 = new User(
+                null,
+                "Alex Green",
+                "alex@gmail.com",
+                "97777777777",
+                passwordEncoder.encode("123456"),
+                "ROLE_ADMIN"
+        );
+
+        User u3 = new User(
+                null,
+                "Bob Brown",
+                "bob@gmail.com",
+                "999999999",
+                passwordEncoder.encode("123456"),
+                "ROLE_USER"
+        );
+
+        Order o1 = new Order(
+                null,
+                Instant.parse("2019-06-20T19:53:07Z"),
+                OrderStatus.PAID,
+                u1
+        );
+
+        Order o2 = new Order(
+                null,
+                Instant.parse("2019-07-21T03:42:10Z"),
+                OrderStatus.WAITING_PAYMENT,
+                u2
+        );
+
+        Order o3 = new Order(
+                null,
+                Instant.parse("2019-07-22T15:21:22Z"),
+                OrderStatus.WAITING_PAYMENT,
+                u1
+        );
+
+        userRepository.saveAll(Arrays.asList(u1, u2, u3));
+        orderRepository.saveAll(Arrays.asList(o1, o2, o3));
+
+        OrderItem oi1 = new OrderItem(o1, p1, 2, p1.getPrice());
+        OrderItem oi2 = new OrderItem(o1, p3, 1, p3.getPrice());
+        OrderItem oi3 = new OrderItem(o2, p3, 2, p3.getPrice());
+        OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
+
+        orderItemRepository.saveAll(Arrays.asList(oi1, oi2, oi3, oi4));
+
+        Payment pay1 = new Payment(
+                null,
+                Instant.parse("2019-06-20T21:53:07Z"),
+                o1
+        );
+
+        o1.setPayment(pay1);
+
+        orderRepository.save(o1);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\dto\LoginRequestDTO.java ---
+package com.educandoweb.course.dto;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public class LoginRequestDTO {
+
+    @NotBlank
+    @Email
+    private String email;
+
+    @NotBlank
+    private String password;
+
+    public LoginRequestDTO() {
+    }
+
+    public LoginRequestDTO(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
+
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\dto\UserDTO.java ---
+package com.educandoweb.course.dto;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public class UserDTO {
+
+    private Long id;
+
+    @NotBlank
+    private String name;
+
+    @NotBlank
+    @Email
+    private String email;
+
+    private String phone;
+
+    public UserDTO() {
+    }
+
+    public UserDTO(Long id, String name, String email, String phone) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\dto\UserInsertDTO.java ---
+package com.educandoweb.course.dto;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public class UserInsertDTO {
+
+    @NotBlank
+    private String name;
+
+    @NotBlank
+    @Email
+    private String email;
+
+    private String phone;
+
+    @NotBlank
+    private String password;
+
+    public UserInsertDTO() {
+    }
+
+    public UserInsertDTO(String name, String email, String phone, String password) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\entities\enums\OrderStatus.java ---
+package com.educandoweb.course.entities.enums;
+
+public enum OrderStatus {
+
+    WAITING_PAYMENT(1),
+    PAID(2),
+    SHIPPED(3),
+    DELIVERED(4),
+    CANCELED(5);
+
+    private int code;
+
+    private OrderStatus(int code) {
+        this.code = code;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public static OrderStatus valueOf(int code) {
+        for (OrderStatus value : OrderStatus.values()){
+            if (value.getCode() == code) {
+                return value;
+            }
+        }
+        throw new IllegalArgumentException("Invalid OrderStatus code");
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\entities\pk\OrderItemPk.java ---
+package com.educandoweb.course.entities.pk;
+
+import com.educandoweb.course.entities.Order;
+import com.educandoweb.course.entities.Product;
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.Objects;
+
+@Embeddable
+public class OrderItemPk implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @ManyToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
+
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        OrderItemPk that = (OrderItemPk) o;
+        return Objects.equals(order, that.order) && Objects.equals(product, that.product);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(order, product);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\entities\Category.java ---
+package com.educandoweb.course.entities;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+
+@Entity
+@Table(name = "tb_category")
+public class Category implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+
+    @JsonIgnore
+    @ManyToMany(mappedBy = "categories")
+    private Set<Product> products = new HashSet<>();
+
+    public Category() {
+    }
+
+    public Category(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Set<Product> getProducts() {
+        return products;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Category category = (Category) o;
+        return Objects.equals(id, category.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\entities\Order.java ---
+package com.educandoweb.course.entities;
+
+import com.educandoweb.course.entities.enums.OrderStatus;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.persistence.*;
+
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.time.Instant;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+
+@Entity
+@Table(name = "tb_order")
+public class Order implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
+    private Instant moment;
+
+    private Integer orderStatus;
+
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private User client;
+
+    @OneToMany(mappedBy = "id.order")
+    private Set<OrderItem> items = new HashSet<>();
+
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+    private Payment payment;
+
+    public Order() {
+    }
+
+    public Order(Long id, Instant moment, OrderStatus orderStatus, User client) {
+        this.id = id;
+        this.moment = moment;
+        setOrderStatus(orderStatus);
+        this.client = client;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Instant getMoment() {
+        return moment;
+    }
+
+    public void setMoment(Instant moment) {
+        this.moment = moment;
+    }
+
+    public OrderStatus getOrderStatus() {
+        if (orderStatus == null){
+            return null;
+        }
+        return OrderStatus.valueOf(orderStatus);
+    }
+
+    public void setOrderStatus(OrderStatus orderStatus) {
+        if (orderStatus != null) {
+            this.orderStatus = orderStatus.getCode();
+        }
+    }
+
+    public User getClient() {
+        return client;
+    }
+
+    public void setClient(User client) {
+        this.client = client;
+    }
+
+    public Payment getPayment() {
+        return payment;
+    }
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
+    }
+
+    public Set<OrderItem> getItems() {
+        return items;
+    }
+
+    public Double getTotal() {
+        double sum = 0;
+        for (OrderItem x : items){
+            sum += x.getSubTotal();
+        }
+        return sum;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Order order = (Order) o;
+        return Objects.equals(id, order.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\entities\OrderItem.java ---
+package com.educandoweb.course.entities;
+
+import com.educandoweb.course.entities.pk.OrderItemPk;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.Objects;
+
+@Entity
+@Table(name = "tb_order_item")
+public class OrderItem implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @EmbeddedId
+    private OrderItemPk id = new OrderItemPk();
+
+    private Integer quantity;
+    private Double price;
+
+    public OrderItem() {
+    }
+
+    public OrderItem(Order order, Product product, Integer quantity, Double price) {
+        id.setOrder(order);
+        id.setProduct(product);
+        this.quantity = quantity;
+        this.price = price;
+    }
+
+    @JsonIgnore
+    public Order getOrder() {
+        return id.getOrder();
+    }
+
+    public void setOrder(Order order){
+        id.setOrder(order);
+    }
+
+    public Product getProduct() {
+        return id.getProduct();
+    }
+
+    public void setProduct(Product product){
+        id.setProduct(product);
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Double getSubTotal() {
+        return price * quantity;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        OrderItem orderItem = (OrderItem) o;
+        return Objects.equals(id, orderItem.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\entities\Payment.java ---
+package com.educandoweb.course.entities;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.time.Instant;
+import java.util.Objects;
+
+@Entity
+@Table(name = "tb_payment")
+public class Payment implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private Instant moment;
+
+    @JsonIgnore
+    @OneToOne
+    @MapsId
+    private Order order;
+
+    public Payment() {
+    }
+
+    public Payment(Long id, Instant moment, Order order) {
+        this.id = id;
+        this.moment = moment;
+        this.order = order;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Instant getMoment() {
+        return moment;
+    }
+
+    public void setMoment(Instant moment) {
+        this.moment = moment;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Payment payment = (Payment) o;
+        return Objects.equals(id, payment.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\entities\Product.java ---
+package com.educandoweb.course.entities;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+
+@Entity
+@Table(name = "tb_product")
+public class Product implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String description;
+    private Double price;
+    private String imgUrl;
+
+    @ManyToMany
+    @JoinTable(name = "tb_product_category", joinColumns = @JoinColumn(name = "product_id"),
+    inverseJoinColumns = @JoinColumn(name = "category_id"))
+    private Set<Category> categories = new HashSet<>();
+
+    @OneToMany(mappedBy = "id.product")
+    private Set<OrderItem> items = new HashSet<>();
+
+    public Product() {
+    }
+
+    public Product(Long id, String name, String description, Double price, String imgUrl) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.imgUrl = imgUrl;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+
+    public Set<Category> getCategories() {
+        return categories;
+    }
+
+    @JsonIgnore
+    public Set<Order> getOrders() {
+        Set<Order> set = new HashSet<>();
+        for (OrderItem x : items) {
+            set.add(x.getOrder());
+        }
+        return set;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return Objects.equals(id, product.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\entities\User.java ---
+package com.educandoweb.course.entities;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.persistence.*;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+@Entity
+@Table(name = "tb_user")
+public class User implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String email;
+    private String phone;
+
+    @JsonIgnore
+    @Schema(hidden = true)
+    private String password;
+    private String role;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "client")
+    private final List<Order> orders = new ArrayList<>();
+
+    public User() {
+    }
+
+    public User(Long id, String name, String email, String phone, String password, String role) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+        this.role = role;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(id, user.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\repository\CategoryRepository.java ---
+package com.educandoweb.course.repository;
+
+import com.educandoweb.course.entities.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CategoryRepository extends JpaRepository<Category, Long> {
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\repository\OrderItemRepository.java ---
+package com.educandoweb.course.repository;
+
+import com.educandoweb.course.entities.OrderItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderItemRepository extends JpaRepository<OrderItem, Long> {
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\repository\OrderRepository.java ---
+package com.educandoweb.course.repository;
+
+import com.educandoweb.course.entities.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderRepository extends JpaRepository<Order, Long> {
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\repository\ProductRepository.java ---
+package com.educandoweb.course.repository;
+
+import com.educandoweb.course.entities.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\repository\UserRepository.java ---
+package com.educandoweb.course.repository;
+
+import com.educandoweb.course.entities.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    Optional<User> findByEmail(String email);
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\resources\exceptions\ResourceExceptionHandler.java ---
+package com.educandoweb.course.resources.exceptions;
+
+import com.educandoweb.course.service.exceptions.DatabaseException;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import java.time.Instant;
+import java.util.stream.Collectors;
+
+@ControllerAdvice
+public class ResourceExceptionHandler {
+
+    @ExceptionHandler(ResourcesNotFoundException.class)
+    public ResponseEntity<StandardError> resourceNotFound(ResourcesNotFoundException e, HttpServletRequest request) {
+        String error = "Resource not found";
+        HttpStatus status = HttpStatus.NOT_FOUND;
+        StandardError err = new StandardError(Instant.now(), status.value(), error, e.getMessage(), request.getRequestURI());
+        return ResponseEntity.status(status).body(err);
+    }
+
+    @ExceptionHandler(DatabaseException.class)
+    public ResponseEntity<StandardError> database(DatabaseException e, HttpServletRequest request) {
+        String error = "Database error";
+        HttpStatus status = HttpStatus.BAD_REQUEST;
+        StandardError err = new StandardError(Instant.now(), status.value(), error, e.getMessage(), request.getRequestURI());
+        return ResponseEntity.status(status).body(err);
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<StandardError> validation(MethodArgumentNotValidException e, HttpServletRequest request) {
+        String error = "Validation error";
+        HttpStatus status = HttpStatus.BAD_REQUEST;
+
+        String message = e.getBindingResult().getFieldErrors().stream().map(fieldError -> fieldError.getField() + ": " + fieldError.getDefaultMessage())
+                .collect(Collectors.joining("; "));
+
+        StandardError err = new StandardError(Instant.now(), status.value(), error, message, request.getRequestURI());
+        return ResponseEntity.status(status).body(err);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\resources\exceptions\StandardError.java ---
+package com.educandoweb.course.resources.exceptions;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.time.Instant;
+
+public class StandardError implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
+    private Instant timestamp;
+    private Integer status;
+    private String error;
+    private String message;
+    private String path;
+
+    public StandardError() {
+    }
+
+    public StandardError(Instant timestamp, Integer status, String error, String message, String path) {
+        this.timestamp = timestamp;
+        this.status = status;
+        this.error = error;
+        this.message = message;
+        this.path = path;
+    }
+
+    public Instant getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Instant timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\resources\AuthResource.java ---
+package com.educandoweb.course.resources;
+
+import com.educandoweb.course.dto.LoginRequestDTO;
+import com.educandoweb.course.service.JwtService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import jakarta.validation.Valid;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/login")
+public class AuthResource {
+
+    private final AuthenticationManager authenticationManager;
+    private final JwtService jwtService;
+
+    public AuthResource(
+            AuthenticationManager authenticationManager,
+            JwtService jwtService
+    ) {
+        this.authenticationManager = authenticationManager;
+        this.jwtService = jwtService;
+    }
+
+    @Operation(
+            summary = "Realiza login",
+            description = "Autentica o usuÃ¡rio e retorna um token JWT."
+    )
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "Login realizado com sucesso"),
+            @ApiResponse(responseCode = "400", description = "Dados invÃ¡lidos"),
+            @ApiResponse(responseCode = "401", description = "E-mail ou senha invÃ¡lidos")
+    })
+    @PostMapping
+    public ResponseEntity<String> login(@Valid @RequestBody LoginRequestDTO dto) {
+        UsernamePasswordAuthenticationToken usernamePassword =
+                new UsernamePasswordAuthenticationToken(
+                dto.getEmail(),
+                dto.getPassword()
+        );
+        authenticationManager.authenticate(usernamePassword);
+        String token = jwtService.generateToken(dto.getEmail());
+        return ResponseEntity.ok(token);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\resources\CategoryResource.java ---
+package com.educandoweb.course.resources;
+
+import com.educandoweb.course.entities.Category;
+import com.educandoweb.course.service.CategoryService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(value = "/categories")
+public class CategoryResource {
+
+    private final CategoryService service;
+
+    public CategoryResource(CategoryService service) {
+        this.service = service;
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Category>> findAll() {
+        List<Category> list = service.findAll();
+        return ResponseEntity.ok().body(list);
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Category> findById(@PathVariable Long id){
+        Category obj = service.findById(id);
+        return ResponseEntity.ok().body(obj);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\resources\OrderResource.java ---
+package com.educandoweb.course.resources;
+
+import com.educandoweb.course.entities.Order;
+import com.educandoweb.course.service.OrderService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(value = "/orders")
+public class OrderResource {
+
+    private final OrderService service;
+
+    public OrderResource(OrderService service) {
+        this.service = service;
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Order>> findAll() {
+        List<Order> list = service.findAll();
+        return ResponseEntity.ok().body(list);
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Order> findById(@PathVariable Long id){
+        Order obj = service.findById(id);
+        return ResponseEntity.ok().body(obj);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\resources\ProductResource.java ---
+package com.educandoweb.course.resources;
+
+import com.educandoweb.course.entities.Product;
+import com.educandoweb.course.service.ProductService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(value = "/products")
+public class ProductResource {
+
+    private final ProductService service;
+
+    public ProductResource(ProductService service) {
+        this.service = service;
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Product>> findAll() {
+        List<Product> list = service.findAll();
+        return ResponseEntity.ok().body(list);
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Product> findById(@PathVariable Long id){
+        Product obj = service.findById(id);
+        return ResponseEntity.ok().body(obj);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\resources\UserResource.java ---
+package com.educandoweb.course.resources;
+
+import com.educandoweb.course.dto.UserDTO;
+import com.educandoweb.course.dto.UserInsertDTO;
+import com.educandoweb.course.entities.User;
+import com.educandoweb.course.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import java.net.URI;
+import java.util.List;
+
+@RestController
+@RequestMapping(value = "/users")
+public class UserResource {
+
+    private final UserService service;
+
+    public UserResource(UserService service) {
+        this.service = service;
+    }
+
+    @Operation(
+            summary = "Lista todos os usuÃ¡rios",
+            description = "Retorna todos os usuÃ¡rios cadastrados. Requer autenticaÃ§Ã£o."
+    )
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "UsuÃ¡rios encontrados com sucesso"),
+            @ApiResponse(responseCode = "401", description = "NÃ£o autenticado")
+    })
+    @GetMapping
+    public ResponseEntity<List<UserDTO>> findAll() {
+        List<UserDTO> list = service.findAll();
+        return ResponseEntity.ok().body(list);
+    }
+
+    @Operation(
+            summary = "Busca usuÃ¡rio por ID",
+            description = "Retorna os dados de um usuÃ¡rio especÃ­fico. Requer autenticaÃ§Ã£o."
+    )
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "UsuÃ¡rio encontrado com sucesso"),
+            @ApiResponse(responseCode = "401", description = "NÃ£o autenticado"),
+            @ApiResponse(responseCode = "404", description = "UsuÃ¡rio nÃ£o encontrado")
+    })
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<UserDTO> findById(@PathVariable Long id){
+        UserDTO obj = service.findById(id);
+        return ResponseEntity.ok().body(obj);
+    }
+
+    @Operation(
+            summary = "Cadastra um novo usuÃ¡rio",
+            description = "Cria um novo usuÃ¡rio e retorna seus dados sem a senha."
+    )
+    @ApiResponses({
+            @ApiResponse(responseCode = "201", description = "UsuÃ¡rio criado com sucesso"),
+            @ApiResponse(responseCode = "400", description = "Dados invÃ¡lidos")
+    })
+    @PostMapping
+    public ResponseEntity<UserDTO> insert(@Valid @RequestBody UserInsertDTO obj) {
+        User user = service.insert(obj);
+
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
+                .buildAndExpand(user.getId()).toUri();
+
+        UserDTO response = new UserDTO(
+                user.getId(),
+                user.getName(),
+                user.getEmail(),
+                user.getPhone()
+        );
+        return ResponseEntity.created(uri).body(response);
+    }
+
+    @Operation(
+            summary = "Exclui um usuÃ¡rio",
+            description = "Exclui um usuÃ¡rio pelo ID. Requer autenticaÃ§Ã£o com perfil ADMIN."
+    )
+    @ApiResponses({
+            @ApiResponse(responseCode = "204", description = "UsuÃ¡rio excluÃ­do com sucesso"),
+            @ApiResponse(responseCode = "400", description = "NÃ£o foi possÃ­vel excluir o usuÃ¡rio"),
+            @ApiResponse(responseCode = "401", description = "NÃ£o autenticado"),
+            @ApiResponse(responseCode = "403", description = "Acesso negado. Requer perfil ADMIN"),
+            @ApiResponse(responseCode = "404", description = "UsuÃ¡rio nÃ£o encontrado")
+    })
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        service.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @Operation(
+            summary = "Atualiza um usuÃ¡rio",
+            description = "Atualiza os dados de um usuÃ¡rio. Requer autenticaÃ§Ã£o com perfil ADMIN."
+    )
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "UsuÃ¡rio atualizado com sucesso"),
+            @ApiResponse(responseCode = "401", description = "NÃ£o autenticado"),
+            @ApiResponse(responseCode = "403", description = "Acesso negado. Requer perfil ADMIN"),
+            @ApiResponse(responseCode = "404", description = "UsuÃ¡rio nÃ£o encontrado")
+    })
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<UserDTO> update(@PathVariable Long id,@Valid @RequestBody UserDTO obj) {
+        User user = service.update(id, obj);
+
+        UserDTO response = new UserDTO(
+                user.getId(),
+                user.getName(),
+                user.getEmail(),
+                user.getPhone()
+        );
+        return ResponseEntity.ok().body(response);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\service\exceptions\DatabaseException.java ---
+package com.educandoweb.course.service.exceptions;
+
+import java.io.Serial;
+
+public class DatabaseException extends RuntimeException {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    public DatabaseException(String msg) {
+        super(msg);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\service\exceptions\ResourcesNotFoundException.java ---
+package com.educandoweb.course.service.exceptions;
+
+import java.io.Serial;
+
+public class ResourcesNotFoundException extends RuntimeException {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    public ResourcesNotFoundException(Object id) {
+        super("Resource not found. Id " + id);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\service\CategoryService.java ---
+package com.educandoweb.course.service;
+
+import com.educandoweb.course.entities.Category;
+import com.educandoweb.course.repository.CategoryRepository;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class CategoryService {
+
+    private final CategoryRepository repository;
+
+    public CategoryService(CategoryRepository repository) {
+        this.repository = repository;
+    }
+
+    public List<Category> findAll() {
+        return repository.findAll();
+    }
+
+    public Category findById(Long id) {
+        return repository.findById(id)
+                .orElseThrow(() -> new ResourcesNotFoundException(id));
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\service\JwtService.java ---
+package com.educandoweb.course.service;
+
+import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import io.jsonwebtoken.Jwts;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Date;
+
+@Service
+public class JwtService {
+
+    @Value("${jwt.secret}")
+    private String secretKey;
+
+    public String generateToken(String email) {
+        Date now = new Date();
+        Date expiration = new Date(now.getTime() + 3600000);
+
+        return Jwts.builder()
+                .subject(email)
+                .issuedAt(now)
+                .expiration(expiration)
+                .signWith(Keys.hmacShaKeyFor(secretKey.getBytes(StandardCharsets.UTF_8)))
+                .compact();
+    }
+
+    public String getSubject(String token) {
+        return Jwts.parser()
+                .verifyWith(Keys.hmacShaKeyFor(secretKey.getBytes(StandardCharsets.UTF_8)))
+                .build()
+                .parseSignedClaims(token)
+                .getPayload()
+                .getSubject();
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\service\OrderService.java ---
+package com.educandoweb.course.service;
+
+import com.educandoweb.course.entities.Order;
+import com.educandoweb.course.repository.OrderRepository;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class OrderService {
+
+    private final OrderRepository repository;
+
+    public OrderService(OrderRepository repository) {
+        this.repository = repository;
+    }
+
+    public List<Order> findAll() {
+        return repository.findAll();
+    }
+
+    public Order findById(Long id) {
+        return repository.findById(id)
+                .orElseThrow(() -> new ResourcesNotFoundException(id));
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\service\ProductService.java ---
+package com.educandoweb.course.service;
+
+import com.educandoweb.course.entities.Product;
+import com.educandoweb.course.repository.ProductRepository;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class ProductService {
+
+    private final ProductRepository repository;
+
+    public ProductService(ProductRepository repository) {
+        this.repository = repository;
+    }
+
+    public List<Product> findAll() {
+        return repository.findAll();
+    }
+
+    public Product findById(Long id) {
+        return repository.findById(id)
+                .orElseThrow(() -> new ResourcesNotFoundException(id));
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\service\UserService.java ---
+package com.educandoweb.course.service;
+
+import com.educandoweb.course.dto.UserDTO;
+import com.educandoweb.course.dto.UserInsertDTO;
+import com.educandoweb.course.entities.User;
+import com.educandoweb.course.repository.UserRepository;
+import com.educandoweb.course.service.exceptions.DatabaseException;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import jakarta.persistence.EntityNotFoundException;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class UserService {
+
+    private final UserRepository repository;
+    private final PasswordEncoder passwordEncoder;
+
+    public UserService(UserRepository repository, PasswordEncoder passwordEncoder) {
+        this.repository = repository;
+        this.passwordEncoder = passwordEncoder;
+    }
+
+    public List<UserDTO> findAll() {
+        List<User> list = repository.findAll();
+
+        return list.stream()
+                .map(user -> new UserDTO(
+                        user.getId(),
+                        user.getName(),
+                        user.getEmail(),
+                        user.getPhone()
+                )).toList();
+    }
+
+    public UserDTO findById(Long id) {
+        User obj = repository.findById(id)
+                .orElseThrow(() -> new ResourcesNotFoundException(id));
+
+        return new UserDTO(
+                obj.getId(),
+                obj.getName(),
+                obj.getEmail(),
+                obj.getPhone()
+        );
+    }
+
+    public User insert(UserInsertDTO obj) {
+        User user = new User(
+                null,
+                obj.getName(),
+                obj.getEmail(),
+                obj.getPhone(),
+                passwordEncoder.encode(obj.getPassword()),
+                "ROLE_USER"
+        );
+
+        return repository.save(user);
+    }
+
+    public void delete(Long id) {
+        if (!repository.existsById(id)){
+            throw new ResourcesNotFoundException(id);
+        }
+        try {
+            repository.deleteById(id);
+        }catch (EmptyResultDataAccessException e){
+            throw new ResourcesNotFoundException(id);
+        }catch (DataIntegrityViolationException e) {
+            throw new DatabaseException("Database integrity violation");
+        }
+    }
+
+    public User update(Long id, UserDTO obj) {
+        try {
+            User entity = repository.getReferenceById(id);
+            updateData(entity, obj);
+            return repository.save(entity);
+        } catch (EntityNotFoundException e) {
+            throw new ResourcesNotFoundException(id);
+        }
+    }
+
+    private void updateData(User entity, UserDTO obj) {
+        entity.setName(obj.getName());
+        entity.setEmail(obj.getEmail());
+
+        if (obj.getPhone() != null) {
+            entity.setPhone(obj.getPhone());
+        }
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\main\java\com\educandoweb\course\CourseApplication.java ---
+package com.educandoweb.course;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CourseApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CourseApplication.class, args);
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\resources\CategoryResourceTest.java ---
+package com.educandoweb.course.resources;
+
+import com.educandoweb.course.entities.Category;
+import com.educandoweb.course.resources.exceptions.ResourceExceptionHandler;
+import com.educandoweb.course.service.CategoryService;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import java.util.List;
+
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+
+
+@ExtendWith(MockitoExtension.class)
+public class CategoryResourceTest {
+
+    @Mock
+    private CategoryService service;
+
+    private MockMvc mockMvc;
+
+    @BeforeEach
+    public void setup() {
+        CategoryResource resource = new CategoryResource(service);
+
+        mockMvc = MockMvcBuilders.standaloneSetup(resource)
+                .setControllerAdvice(new ResourceExceptionHandler())
+                .build();
+    }
+
+    @Test
+    public void findAllShouldReturnCategoryList() throws Exception {
+        Category category1 = new Category(1L, "Electronics");
+        Category category2 = new Category(2L, "Books");
+
+        when(service.findAll()).thenReturn(List.of(category1, category2));
+        mockMvc.perform(get("/categories")).andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(2));
+    }
+    @Test
+    public void findByIdShouldReturnCategoryWhenIdExists() throws Exception {
+        Category category = new Category(1L, "Electronics");
+        when(service.findById(1L)).thenReturn(category);
+        mockMvc.perform(get("/categories/1")).andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(1L))
+                .andExpect(jsonPath("$.name").value("Electronics"));
+    }
+    @Test
+    public void findByIdShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
+       when(service.findById(999L)).thenThrow(new ResourcesNotFoundException(999L));
+        mockMvc.perform(get("/categories/999"))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.error").value("Resource not found"))
+                .andExpect(jsonPath("$.message").value("Resource not found. Id 999"))
+                .andExpect(jsonPath("$.path").value("/categories/999"));
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\resources\OrderResourceTest.java ---
+package com.educandoweb.course.resources;
+
+import com.educandoweb.course.entities.Order;
+import com.educandoweb.course.entities.enums.OrderStatus;
+import com.educandoweb.course.resources.exceptions.ResourceExceptionHandler;
+import com.educandoweb.course.service.OrderService;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.util.ReflectionTestUtils;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import java.time.Instant;
+import java.util.List;
+
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+
+@ExtendWith(MockitoExtension.class)
+public class OrderResourceTest {
+
+    @Mock
+    private OrderService service;
+
+    private MockMvc mockMvc;
+
+    @BeforeEach
+    public void setup() {
+        OrderResource resource = new OrderResource(service);
+
+        ReflectionTestUtils.setField(resource, "service", service);
+
+        mockMvc = MockMvcBuilders.standaloneSetup(resource).setControllerAdvice(new ResourceExceptionHandler()).build();
+    }
+
+    @Test
+    public void findAllShouldReturnOrderList() throws Exception {
+        Order order1 = new Order(
+                1L,
+                Instant.parse("2026-09-16T10:00:00Z"),
+                OrderStatus.PAID,
+                null
+        );
+
+        Order order2 = new Order(
+                2L,
+                Instant.parse("2026-09-16T14:30:00Z"),
+                OrderStatus.WAITING_PAYMENT,
+                null
+        );
+
+        when(service.findAll()).thenReturn(List.of(order1, order2));
+        mockMvc.perform(get("/orders")).andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(2));
+    }
+    @Test
+    public void findByIdShouldReturnOrderWhenIdExists() throws Exception {
+        Order order = new Order(
+                1L,
+                Instant.parse("2026-09-16T10:00:00Z"),
+                OrderStatus.PAID,
+                null
+        );
+        when(service.findById(1L)).thenReturn(order);
+        mockMvc.perform(get("/orders/1")).andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(1L))
+                .andExpect(jsonPath("$.moment").value("2026-09-16T10:00:00Z"))
+                .andExpect(jsonPath("$.orderStatus").value("PAID"))
+                .andExpect(jsonPath("$.client").isEmpty());
+    }
+    @Test
+    public void findByIdShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
+        when(service.findById(999L)).thenThrow(new ResourcesNotFoundException(999L));
+
+        mockMvc.perform(get("/orders/999"))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.error").value("Resource not found"))
+                .andExpect(jsonPath("$.message").value("Resource not found. Id 999"))
+                .andExpect(jsonPath("$.path").value("/orders/999"));
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\resources\ProductResourceTest.java ---
+package com.educandoweb.course.resources;
+
+import com.educandoweb.course.entities.Product;
+import com.educandoweb.course.resources.exceptions.ResourceExceptionHandler;
+import com.educandoweb.course.service.ProductService;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.util.ReflectionTestUtils;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import java.util.List;
+
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+
+@ExtendWith(MockitoExtension.class)
+public class ProductResourceTest {
+
+    @Mock
+    private ProductService service;
+
+    private MockMvc mockMvc;
+
+    @BeforeEach
+    public void setup() {
+        ProductResource resource = new ProductResource(service);
+
+        ReflectionTestUtils.setField(resource, "service", service);
+
+        mockMvc = MockMvcBuilders.standaloneSetup(resource).setControllerAdvice(new ResourceExceptionHandler()).build();
+    }
+
+    @Test
+    public void findAllShouldReturnProductList() throws Exception {
+        Product product1 = new Product(
+                1L,
+                "The Lord of the Rings",
+                "Fantasy book",
+                39.90,
+                ""
+        );
+
+        Product product2 = new Product(
+                2L,
+                "Mechanical Keyboard",
+                "RGB mechanical keyboard",
+                249.90,
+                ""
+        );
+
+        when(service.findAll()).thenReturn(List.of(product1, product2));
+        mockMvc.perform(get("/products")).andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(2));
+    }
+    @Test
+    public void findByIdShouldReturnProductWhenIdExists() throws Exception {
+        Product product = new Product(
+                1L,
+                "The Lord of the Rings",
+                "Fantasy book",
+                39.90,
+                ""
+        );
+        when(service.findById(1L)).thenReturn(product);
+        mockMvc.perform(get("/products/1")).andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(1L))
+                .andExpect(jsonPath("$.name").value("The Lord of the Rings"))
+                .andExpect(jsonPath("$.price").value(39.90))
+                .andExpect(jsonPath("$.imgUrl").value(""));
+    }
+    @Test
+    public void findByIdShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
+        when(service.findById(999L)).thenThrow(new ResourcesNotFoundException(999L));
+
+        mockMvc.perform(get("/products/999"))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.error").value("Resource not found"))
+                .andExpect(jsonPath("$.message").value("Resource not found. Id 999"))
+                .andExpect(jsonPath("$.path").value("/products/999"));
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\resources\UserResourceTest.java ---
+package com.educandoweb.course.resources;
+
+import com.educandoweb.course.dto.UserDTO;
+import com.educandoweb.course.dto.UserInsertDTO;
+import com.educandoweb.course.entities.User;
+import com.educandoweb.course.resources.exceptions.ResourceExceptionHandler;
+import com.educandoweb.course.service.UserService;
+import com.educandoweb.course.service.exceptions.DatabaseException;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.http.MediaType;
+import org.springframework.test.util.ReflectionTestUtils;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import java.util.List;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@ExtendWith(MockitoExtension.class)
+public class UserResourceTest {
+
+    @Mock
+    private UserService service;
+
+    private MockMvc mockMvc;
+
+    @BeforeEach
+    public void setup() {
+        UserResource resource = new UserResource(service);
+
+        ReflectionTestUtils.setField(resource, "service", service);
+
+        mockMvc = MockMvcBuilders.standaloneSetup(resource).setControllerAdvice(new ResourceExceptionHandler()).build();
+    }
+
+    @Test
+    public void findByIdShouldReturnUserWhenIdExists() throws Exception {
+        UserDTO user = new UserDTO(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511"
+        );
+        when(service.findById(1L)).thenReturn(user);
+        mockMvc.perform(get("/users/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(1L))
+                .andExpect(jsonPath("$.name").value("Maria Brown"))
+                .andExpect(jsonPath("$.email").value("maria@gmail.com"))
+                .andExpect(jsonPath("$.phone").value("4599925511"));
+    }
+
+    @Test
+    public void findByIdShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
+        when(service.findById(999L)).thenThrow(new ResourcesNotFoundException(999L));
+        mockMvc.perform(get("/users/999"))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.error").value("Resource not found"))
+                .andExpect(jsonPath("$.message").value("Resource not found. Id 999"))
+                .andExpect(jsonPath("$.path").value("/users/999"));
+    }
+
+    @Test
+    public void findAllShouldReturnUserList() throws Exception {
+        UserDTO user = new UserDTO(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511"
+        );
+        UserDTO user2 = new UserDTO(
+                2L,
+                "Alex Green",
+                "alex@gmail.com",
+                "974563221"
+        );
+        when(service.findAll()).thenReturn(List.of(user, user2));
+        mockMvc.perform(get("/users"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(2))
+                .andExpect(jsonPath("$[0].id").value(1))
+                .andExpect(jsonPath("$[0].name").value("Maria Brown"))
+                .andExpect(jsonPath("$[0].email").value("maria@gmail.com"))
+                .andExpect(jsonPath("$[0].phone").value("4599925511"))
+                .andExpect(jsonPath("$[1].id").value(2))
+                .andExpect(jsonPath("$[1].name").value("Alex Green"))
+                .andExpect(jsonPath("$[1].email").value("alex@gmail.com"))
+                .andExpect(jsonPath("$[1].phone").value("974563221"));        ;
+    }
+
+    @Test
+    public void insertShouldReturnCreated() throws Exception {
+        User user = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                null,
+                "ROLE_USER"
+        );
+        when(service.insert(any(UserInsertDTO.class))).thenReturn(user);
+        String json = """
+                {
+                    "name": "Maria Brown",
+                    "email": "maria@gmail.com",
+                    "phone": "4599925511",
+                    "password": "123456"
+                }
+                """;
+
+        mockMvc.perform(post("/users").contentType(MediaType.APPLICATION_JSON).content(json))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$.id").value(1))
+                .andExpect(jsonPath("$.name").value("Maria Brown"))
+                .andExpect(jsonPath("$.email").value("maria@gmail.com"))
+                .andExpect(jsonPath("$.phone").value("4599925511"))
+                .andExpect(header().string("Location", "http://localhost/users/1"));
+    }
+
+    @Test
+    public void deleteShouldReturnNoContent() throws Exception {
+        doNothing().when(service).delete(1L);
+        mockMvc.perform(delete("/users/1")).andExpect(status().isNoContent());
+    }
+
+    @Test
+    public void deleteShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
+        doThrow(new ResourcesNotFoundException(999L)).when(service).delete(999L);
+        mockMvc.perform(delete("/users/999")).andExpect(status().isNotFound());
+    }
+
+    @Test
+    public void updateShouldReturnUserWhenIdExists() throws Exception {
+        User user = new User(
+                1L,
+                "Carlos Silva",
+                "carlos@gmail.com",
+                "11999999999",
+                null,
+                "ROLE_USER"
+        );
+        String json = """
+                {
+                    "name": "Carlos Silva",
+                    "email": "carlos@gmail.com",
+                    "phone": "11999999999"
+                }
+                """;
+        when(service.update(eq(1L), any(UserDTO.class))).thenReturn(user);
+        mockMvc.perform(put("/users/1").contentType(MediaType.APPLICATION_JSON).content(json))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(1))
+                .andExpect(jsonPath("$.name").value("Carlos Silva"))
+                .andExpect(jsonPath("$.email").value("carlos@gmail.com"))
+                .andExpect(jsonPath("$.phone").value("11999999999"));
+    }
+
+    @Test
+    public void updateShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
+        String json = """
+                {
+                    "name": "Carlos Silva",
+                    "email": "carlos@gmail.com",
+                    "phone": "11999999999"
+                }
+                """;
+        when(service.update(eq(999L), any(UserDTO.class))).thenThrow(new ResourcesNotFoundException(999L));
+        mockMvc.perform(put("/users/999")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.error").value("Resource not found"))
+                .andExpect(jsonPath("$.message").value("Resource not found. Id 999"))
+                .andExpect(jsonPath("$.path").value("/users/999"));
+    }
+
+    @Test
+    public void insertShouldReturnBadRequestWhenNameIsBlank() throws Exception {
+        String json = """
+        {
+            "name": "",
+            "email": "maria@gmail.com",
+            "phone": "4599925511",
+            "password": "123456"
+        }
+        """;
+        mockMvc.perform(post("/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.status").value(400))
+                .andExpect(jsonPath("$.error").value("Validation error"))
+                .andExpect(jsonPath("$.message").value("name: must not be blank"))
+                .andExpect(jsonPath("$.path").value("/users"));
+    }
+
+    @Test
+    public void insertShouldReturnBadRequestWhenEmailIsInvalid() throws Exception {
+        String json = """
+            {
+                "name": "Maria Brown",
+                "email": "email-invalido",
+                "phone": "4599925511",
+                "password": "123456"
+            }
+            """;
+
+        mockMvc.perform(post("/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    public void insertShouldReturnBadRequestWhenPasswordIsBlank() throws Exception {
+        String json = """
+            {
+                "name": "Maria Brown",
+                "email": "maria@gmail.com",
+                "phone": "4599925511",
+                "password": ""
+            }
+            """;
+
+        mockMvc.perform(post("/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    public void updateShouldReturnUserWhenPhoneIsNotProvided() throws Exception {
+        User user = new User(
+                1L,
+                "Carlos Silva",
+                "carlos@gmail.com",
+                "11999999999",
+                null,
+                "ROLE_USER"
+        );
+
+        String json = """
+            {
+                "name": "Carlos Silva",
+                "email": "carlos@gmail.com"
+            }
+            """;
+
+        when(service.update(eq(1L), any(UserDTO.class))).thenReturn(user);
+
+        mockMvc.perform(put("/users/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(1))
+                .andExpect(jsonPath("$.name").value("Carlos Silva"))
+                .andExpect(jsonPath("$.email").value("carlos@gmail.com"))
+                .andExpect(jsonPath("$.phone").value("11999999999"));
+    }
+
+    @Test
+    public void deleteShouldReturnBadRequestWhenIntegrityViolation() throws Exception {
+        doThrow(new DatabaseException("Database integrity violation"))
+                .when(service).delete(1L);
+
+        mockMvc.perform(delete("/users/1"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.status").value(400))
+                .andExpect(jsonPath("$.error").value("Database error"))
+                .andExpect(jsonPath("$.message").value("Database integrity violation"))
+                .andExpect(jsonPath("$.path").value("/users/1"));
+    }
+
+    @Test
+    public void updateShouldReturnBadRequestWhenNameIsBlank() throws Exception {
+        String json = """
+            {
+                "name": "",
+                "email": "carlos@gmail.com",
+                "phone": "11999999999"
+            }
+            """;
+
+        mockMvc.perform(put("/users/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    public void updateShouldReturnBadRequestWhenEmailIsInvalid() throws Exception {
+        String json = """
+            {
+                "name": "Carlos Silva",
+                "email": "email-invalido",
+                "phone": "11999999999"
+            }
+            """;
+
+        mockMvc.perform(put("/users/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                .andExpect(status().isBadRequest());
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\security\UserSecurityTest.java ---
+package com.educandoweb.course.security;
+
+import com.educandoweb.course.service.JwtService;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.security.Keys;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
+import org.springframework.test.context.TestPropertySource;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.http.MediaType;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Date;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+@SpringBootTest
+@AutoConfigureMockMvc
+@TestPropertySource(properties = "JWT_SECRET=minha-chave-secreta-com-mais-de-32-bytes")
+public class UserSecurityTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private JwtService jwtService;
+
+    @Value("${jwt.secret}")
+    private String secretKey;
+
+    @Test
+    public void shouldReturnUnauthorizedWhenAccessWithoutToken() throws Exception {
+        mockMvc.perform(get("/users"))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    public void shouldReturnOkWhenAccessWithValidToken() throws Exception {
+        String token = jwtService.generateToken("maria@gmail.com");
+
+        mockMvc.perform(get("/users")
+                        .header("Authorization", "Bearer " + token))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void shouldReturnUnauthorizedWhenAccessWithInvalidToken() throws Exception {
+        mockMvc.perform(get("/users")
+                .header("Authorization", "Bearer token-invalido"))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    public void shouldReturnUnauthorizedWhenTokenIsExpired() throws Exception {
+        String token = Jwts.builder()
+                .subject("maria@gmail.com")
+                .expiration(new Date(System.currentTimeMillis() - 1000))
+                .signWith(Keys.hmacShaKeyFor(
+                        secretKey.getBytes(StandardCharsets.UTF_8)
+                ))
+                .compact();
+
+        mockMvc.perform(get("/users")
+                        .header("Authorization", "Bearer " + token))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    public void shouldReturnForbiddenWhenUserTriesToUpdate() throws Exception {
+        String token = jwtService.generateToken("maria@gmail.com");
+
+        mockMvc.perform(put("/users/1")
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                            {
+                                "name": "Maria Atualizada",
+                                "email": "maria@gmail.com",
+                                "phone": "999999999"
+                            }
+                            """))
+                .andExpect(status().isForbidden());
+    }
+
+    @Test
+    public void shouldReturnOkWhenAdminTriesToUpdate() throws Exception {
+        String token = jwtService.generateToken("alex@gmail.com");
+
+        mockMvc.perform(put("/users/1")
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                            {
+                                "name": "Maria Atualizada",
+                                "email": "maria@gmail.com",
+                                "phone": "999999999"
+                            }
+                            """))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void shouldReturnForbiddenWhenUserTriesToDelete() throws Exception {
+        String token = jwtService.generateToken("maria@gmail.com");
+
+        mockMvc.perform(delete("/users/1")
+                        .header("Authorization", "Bearer " + token))
+                .andExpect(status().isForbidden());
+    }
+
+    @Test
+    public void shouldReturnBadRequestWhenAdminTriesToDeleteUserWithOrders() throws Exception {
+        String token = jwtService.generateToken("alex@gmail.com");
+
+        mockMvc.perform(delete("/users/2")
+                        .header("Authorization", "Bearer " + token))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    public void shouldReturnNoContentWhenAdminTriesToDeleteUser() throws Exception {
+        String token = jwtService.generateToken("alex@gmail.com");
+
+        mockMvc.perform(delete("/users/3")
+                        .header("Authorization", "Bearer " + token))
+                .andExpect(status().isNoContent());
+    }
+
+    @Test
+    public void shouldReturnUnauthorizedWhenTokenUserDoesNotExist() throws Exception {
+        String token = jwtService.generateToken("usuario@naoexiste.com");
+
+        mockMvc.perform(get("/users")
+                        .header("Authorization", "Bearer " + token))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    public void shouldReturnNotFoundWhenAdminTriesToDeleteNonExistingUser() throws Exception {
+        String token = jwtService.generateToken("alex@gmail.com");
+
+        mockMvc.perform(delete("/users/999")
+                        .header("Authorization", "Bearer " + token))
+                .andExpect(status().isNotFound());
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\service\CategoryServiceTest.java ---
+package com.educandoweb.course.service;
+
+import com.educandoweb.course.entities.Category;
+import com.educandoweb.course.repository.CategoryRepository;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.util.List;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.when;
+
+@ExtendWith(MockitoExtension.class)
+public class CategoryServiceTest {
+
+    @Mock
+    private CategoryRepository categoryRepository;
+
+    @InjectMocks
+    private CategoryService categoryService;
+
+    @Test
+    public void findByIdShouldReturnCategoryWhenIdExists() {
+        Category category = new Category(1L, "Electronics");
+        when(categoryRepository.findById(1L)).thenReturn(Optional.of(category));
+        Category result = categoryService.findById(1L);
+
+        assertEquals(1L, result.getId());
+        assertEquals("Electronics", result.getName());
+    }
+
+    @Test
+    public void findByIdShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist() {
+
+        when(categoryRepository.findById(999L)).thenReturn(Optional.empty());
+        assertThrows(ResourcesNotFoundException.class, () -> categoryService.findById(999L));
+    }
+
+    @Test
+    public void findAllShouldReturnCategoryList() {
+        Category category1 = new Category(1L, "Electronics");
+        Category category2 = new Category(2L, "Furniture");
+
+        when(categoryRepository.findAll()).thenReturn(List.of(category1, category2));
+        List<Category> result = categoryService.findAll();
+
+        assertEquals(2, result.size());
+        assertEquals(1L, result.getFirst().getId());
+        assertEquals("Electronics", result.getFirst().getName());
+        assertEquals(2L, result.get(1).getId());
+        assertEquals("Furniture", result.get(1).getName());
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\service\OrderServiceTest.java ---
+package com.educandoweb.course.service;
+
+import com.educandoweb.course.entities.Order;
+import com.educandoweb.course.entities.enums.OrderStatus;
+import com.educandoweb.course.repository.OrderRepository;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.time.Instant;
+import java.util.List;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
+
+@ExtendWith(MockitoExtension.class)
+public class OrderServiceTest {
+
+    @Mock
+    private OrderRepository orderRepository;
+
+    @InjectMocks
+    private OrderService orderService;
+
+    @Test
+    public void findByIdShouldReturnOrderWhenIdExists(){
+        Order order = new Order(
+                1L,
+                Instant.parse("2019-06-20T19:53:07Z"),
+                OrderStatus.PAID,
+                null
+        );
+        when(orderRepository.findById(1L)).thenReturn(Optional.of(order));
+        Order result = orderService.findById(1l);
+        assertEquals(1L, result.getId());
+        assertEquals(Instant.parse("2019-06-20T19:53:07Z"), result.getMoment());
+        assertEquals(OrderStatus.PAID, result.getOrderStatus());
+        assertNull(result.getClient());
+    }
+
+    @Test
+    public void findByIdShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist() {
+        when(orderRepository.findById(1L)).thenReturn(Optional.empty());
+        assertThrows(ResourcesNotFoundException.class, () -> orderService.findById(1L));
+    }
+
+    @Test
+    public void findAllShouldReturnOrderList() {
+        Order order1 = new Order(
+                1L,
+                Instant.parse("2019-06-20T19:53:07Z"),
+                OrderStatus.PAID,
+                null
+        );
+        Order order2 = new Order(
+                2L,
+                Instant.parse("2019-07-21T03:42:10Z"),
+                OrderStatus.WAITING_PAYMENT,
+                null
+        );
+        when(orderRepository.findAll()).thenReturn(List.of(order1, order2));
+        List<Order> result = orderService.findAll();
+
+        assertEquals(2, result.size());
+        assertEquals(1L, result.getFirst().getId());
+        assertEquals(Instant.parse("2019-06-20T19:53:07Z"), result.getFirst().getMoment());
+        assertEquals(OrderStatus.PAID, result.getFirst().getOrderStatus());
+        assertNull(result.getFirst().getClient());
+
+        assertEquals(2L, result.get(1).getId());
+        assertEquals(Instant.parse("2019-07-21T03:42:10Z"), result.get(1).getMoment());
+        assertEquals(OrderStatus.WAITING_PAYMENT, result.get(1).getOrderStatus());
+        assertNull(result.get(1).getClient());
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\service\ProductServiceTest.java ---
+package com.educandoweb.course.service;
+
+import com.educandoweb.course.entities.Product;
+import com.educandoweb.course.repository.ProductRepository;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.util.List;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.when;
+
+@ExtendWith(MockitoExtension.class)
+public class ProductServiceTest {
+
+    @Mock
+    private ProductRepository productRepository;
+
+    @InjectMocks
+    private ProductService productService;
+
+    @Test
+    public void findByIdShouldReturnProductWhenIdExists() {
+        Product product = new Product(
+                1L,
+                "The Lord of the Rings",
+                "Lorem ipsum dolor sit amet, consectetur.",
+                90.5,
+                ""
+        );
+        when(productRepository.findById(1L)).thenReturn(Optional.of(product));
+        Product result = productService.findById(1L);
+        assertEquals(1L, result.getId());
+        assertEquals("The Lord of the Rings", result.getName());
+        assertEquals("Lorem ipsum dolor sit amet, consectetur.", result.getDescription());
+        assertEquals(90.5, result.getPrice());
+        assertEquals("", result.getImgUrl());
+    }
+    @Test
+    public void findByIdShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist() {
+
+        when(productRepository.findById(999L)).thenReturn(Optional.empty());
+        assertThrows(ResourcesNotFoundException.class, () -> productService.findById(999L));
+    }
+
+    @Test
+    public void findAllShouldReturnProductList() {
+        Product product1 = new Product(
+                1L,
+                "The Lord of the Rings",
+                "Lorem ipsum dolor sit amet, consectetur.",
+                90.5,
+                ""
+        );
+        Product product2 = new Product(
+                2L,
+                "Smart TV",
+                "Nulla eu imperdiet purus. Maecenas ante.",
+                2190.0,
+                ""
+        );
+        when(productRepository.findAll()).thenReturn(List.of(product1, product2));
+        List<Product> result = productService.findAll();
+        assertEquals(2, result.size());
+
+        assertEquals(1L, result.getFirst().getId());
+        assertEquals("The Lord of the Rings", result.getFirst().getName());
+        assertEquals("Lorem ipsum dolor sit amet, consectetur.", result.getFirst().getDescription());
+        assertEquals(90.5, result.getFirst().getPrice());
+        assertEquals("", result.getFirst().getImgUrl());
+
+        assertEquals(2L, result.get(1).getId());
+        assertEquals("Smart TV", result.get(1).getName());
+        assertEquals("Nulla eu imperdiet purus. Maecenas ante.", result.get(1).getDescription());
+        assertEquals(2190.0, result.get(1).getPrice());
+        assertEquals("", result.get(1).getImgUrl());
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\service\UserServiceTest.java ---
+package com.educandoweb.course.service;
+
+import com.educandoweb.course.dto.UserDTO;
+import com.educandoweb.course.dto.UserInsertDTO;
+import com.educandoweb.course.entities.User;
+import com.educandoweb.course.repository.UserRepository;
+import com.educandoweb.course.service.exceptions.DatabaseException;
+import com.educandoweb.course.service.exceptions.ResourcesNotFoundException;
+import jakarta.persistence.EntityNotFoundException;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import java.util.List;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
+
+@ExtendWith(MockitoExtension.class)
+public class UserServiceTest {
+
+    @Mock
+    private UserRepository userRepository;
+
+    @Mock
+    private PasswordEncoder passwordEncoder;
+
+    @InjectMocks
+    private UserService userService;
+
+    @Test
+    public void findByIdShouldReturnUserDTOWhenIdExists() {
+
+        User user = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                "123456",
+                "ROLE_USER"
+        );
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+        UserDTO result = userService.findById(1L);
+
+        assertEquals(1L, result.getId());
+        assertEquals("Maria Brown", result.getName());
+        assertEquals("maria@gmail.com", result.getEmail());
+        assertEquals("4599925511", result.getPhone());
+    }
+
+    @Test
+    public void findByIdShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist() {
+
+        when(userRepository.findById(999L)).thenReturn(Optional.empty());
+        assertThrows(ResourcesNotFoundException.class, () -> userService.findById(999L));
+    }
+
+    @Test
+    public void findAllShouldReturnUserDTOList() {
+        User user1 = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                "123456",
+                "ROLE_USER"
+        );
+
+        User user2 = new User(
+                2L,
+                "Alex Green",
+                "alex@gmail.com",
+                "97777777777",
+                "123456",
+                "ROLE_USER"
+        );
+        when(userRepository.findAll()).thenReturn(List.of(user1, user2));
+        List<UserDTO> result = userService.findAll();
+
+        assertEquals(2, result.size());
+        assertEquals(1L, result.getFirst().getId());
+        assertEquals("Maria Brown", result.getFirst().getName());
+        assertEquals("maria@gmail.com", result.get(0).getEmail());
+        assertEquals("4599925511", result.get(0).getPhone());
+
+        assertEquals(2L, result.get(1).getId());
+        assertEquals("Alex Green", result.get(1).getName());
+        assertEquals("alex@gmail.com", result.get(1).getEmail());
+        assertEquals("97777777777", result.get(1).getPhone());
+
+    }
+
+    @Test
+    public void insertShouldReturnUser() {
+        UserInsertDTO dto = new UserInsertDTO(
+                "Carlos Silva",
+                "carlos@gmail.com",
+                "11999999999",
+                "123456"
+        );
+
+        User user = new User(
+                1L,
+                "Carlos Silva",
+                "carlos@gmail.com",
+                "11999999999",
+                null,
+                "ROLE_USER"
+        );
+
+        when(userRepository.save(any(User.class))).thenReturn(user);
+        when(passwordEncoder.encode("123456")).thenReturn("senha-criptografada");
+        User result = userService.insert(dto);
+        assertEquals(1L, result.getId());
+        assertEquals("Carlos Silva", result.getName());
+        assertEquals("carlos@gmail.com", result.getEmail());
+        assertEquals("11999999999", result.getPhone());
+
+        verify(passwordEncoder).encode("123456");
+    }
+
+    @Test
+    public void updateShouldReturnUser() {
+        UserDTO dto = new UserDTO(
+                null,
+                "Carlos Silva",
+                "carlos@gmail.com",
+                "11999999999"
+        );
+
+        User user = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                "123456",
+                "ROLE_USER"
+        );
+        when(userRepository.getReferenceById(user.getId())).thenReturn(user);
+        when(userRepository.save(any(User.class))).thenReturn(user);
+        User result = userService.update(user.getId(), dto);
+
+        assertEquals(user.getId(), result.getId());
+        assertEquals(dto.getName(), result.getName());
+        assertEquals(dto.getEmail(), result.getEmail());
+        assertEquals(dto.getPhone(), result.getPhone());
+    }
+
+    @Test
+    public void updateShouldKeepExistingPhoneWhenPhoneIsNotProvided() {
+
+        UserDTO dto = new UserDTO(
+                null,
+                "Carlos Silva",
+                "carlos@gmail.com",
+                null
+        );
+
+        User user = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                "123456",
+                "ROLE_USER"
+        );
+
+        when(userRepository.getReferenceById(user.getId())).thenReturn(user);
+        when(userRepository.save(any(User.class))).thenReturn(user);
+
+        User result = userService.update(user.getId(), dto);
+
+        assertEquals("Carlos Silva", result.getName());
+        assertEquals("carlos@gmail.com", result.getEmail());
+        assertEquals("4599925511", result.getPhone());
+    }
+
+    @Test
+    public void updateShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist() {
+        UserDTO dto = new UserDTO(
+                null,
+                "Carlos Silva",
+                "carlos@gmail.com",
+                "11999999999"
+        );
+
+        User user = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                "123456",
+                "ROLE_USER"
+        );
+        when(userRepository.getReferenceById(999L)).thenThrow(new EntityNotFoundException());
+        assertThrows(ResourcesNotFoundException.class, () -> userService.update(999L, dto));
+    }
+
+    @Test
+    public void deleteShouldDeleteUserWhenIdExists() {
+        User user = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                "123456",
+                "ROLE_USER"
+        );
+        when(userRepository.existsById(user.getId())).thenReturn(true);
+        userService.delete(user.getId());
+        verify(userRepository).deleteById(user.getId());
+    }
+
+    @Test
+    public void deleteShouldThrowResourcesNotFoundExceptionWhenIdDoesNotExist() {
+        User user = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                "123456",
+                "ROLE_USER"
+        );
+        when(userRepository.existsById(user.getId())).thenReturn(false);
+        assertThrows(ResourcesNotFoundException.class, () -> userService.delete(user.getId()));
+    }
+
+    @Test
+    public void deleteShouldThrowDatabaseExceptionWhenIntegrityViolation() {
+        User user = new User(
+                1L,
+                "Maria Brown",
+                "maria@gmail.com",
+                "4599925511",
+                "123456",
+                "ROLE_USER"
+        );
+
+        when(userRepository.existsById(user.getId())).thenReturn(true);
+
+        doThrow(new DataIntegrityViolationException(""))
+                .when(userRepository)
+                .deleteById(user.getId());
+
+        DatabaseException exception = assertThrows(
+                DatabaseException.class,
+                () -> userService.delete(user.getId())
+        );
+
+        assertEquals("Database integrity violation", exception.getMessage());
+    }
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\src\test\java\com\educandoweb\course\CourseApplicationTests.java ---
+package com.educandoweb.course;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
+
+@SpringBootTest
+@TestPropertySource(properties = "JWT_SECRET=minha-chave-secreta-com-mais-de-32-bytes")
+class CourseApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
+--- FIM DO ARQUIVO ---
+
+--- INÍCIO DO ARQUIVO: C:\Users\elxfp\IdeaProjects\course-wsbjpa\pom.xml ---
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>4.0.6</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.educandoweb</groupId>
+	<artifactId>course</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name/>
+	<description/>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>25</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-h2console</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.13.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.13.0</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.13.0</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>3.1.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+--- FIM DO ARQUIVO ---
+
